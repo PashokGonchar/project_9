@@ -1,0 +1,41 @@
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 50px;
+}
+
+.title-slogan {
+  color: var(--color-orange);
+}
+
+.how_its_made {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-made {
+  list-style: inside;
+  list-style-position: outside;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 20px 14px;
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.subtitle .item {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
