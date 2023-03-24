@@ -180,6 +180,12 @@
     height: 24px;
     stroke: var(--color-black);
     fill: transparent;
+
+    transition: var(--time-duration) var(--time-distribution);
+  }
+
+  .nav-soc-icon:hover {
+    stroke: var(--color-orange);
   }
 
   .header-nav-soc {
