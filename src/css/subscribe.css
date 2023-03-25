@@ -1,24 +1,288 @@
+.subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/production_mobile@2x.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        text-align: center;
+        padding-top: 62px;
+        padding-bottom: 62px;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        .subscribe {
+            /*padding-top: 72px;*/
+            padding-bottom: 72px;
+            
+        }
+    }
+
+   /* @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .subscribe {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                rgba(46, 47, 66, 0.7),
+                url('/img/production_mobile@2x.jpg');
+        }
+    }
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 190dpi) and (min-width: 768px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) {
+            .subscribe {
+                    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                        rgba(46, 47, 66, 0.7),
+                        url('/img/production_tablet@2x.jpg');
+                }
+        }
+                @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+                screen and (min-resolution: 190dpi) and (min-width: 1200px),
+                screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+                    .subscribe {
+                        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                            rgba(46, 47, 66, 0.7),
+                            url('/img/production_desktop@2x.jpg');
+                    }
+                }*/
+
+
 .subscribe-title {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
+
+
 font-size: 24px;
 line-height: 1.166;
 text-align: center;
 letter-spacing: -0.03em;
-text-transform: uppercase;
 
-color: #FFFFFF;
+color: var(--color-white);
 
 }
 .subscribe-text {
-    font-family: 'Montserrat';
+        
+        text-align: center;
+        color: var(--color-white);
+        margin-top: 24px;
+        padding-left: 24.5px;
+        padding-right: 24.5px;
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-text {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .subscribe-text {
+        padding-left: 366px;
+        padding-right: 367px;
+        
+    }
+
+}
+
+.btn-subscribe {
+        font-family: 'Montserrat';
         font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-         text-align: center;
-        letter-spacing: -0.02em;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.222;
+        color: var(--color-white);
+        align-items: center;
+        padding: 14px 40px;
+        border: none;
+        width: 172px;
+        height: 50px;
+        background: #FD9222;
+        border-radius: 100px;
+        margin-top: 24px;
+    }
+
+    .btn-subscribe:hover,
+    .btn-subscribe:focus {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.222;
+
+        color: #FD9222;
+        background: #FCF1E0;
+        border-radius: 100px;
+    }
+
+    /*  Модальне вікно   */
+
+.backdrop {
+    position: fixed;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
     
-        color: #FFFFFF;
+
+}
+
+.modal {
+    position: relative;
+    width: 538px;
+    height: 412px;
+    max-width: 538px;
+    background: #E2E2E2;
+    border-radius: 20px;
+    padding: 0;
+
+}
+
+
+.thumb-img {
+    height: 196px;
+    width: 538px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.thumb-img > img {
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.modal-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: transparent;
+        border: none;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    
+        z-index: 2;
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(0);
+
+}
+
+.close-icon {
+    display: block;
+    width: 14px;
+    height: 14px;
+    fill: white;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+
+/* Form modal */
+
+.form-modal {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+}
+
+.title-modal {
+    width: 298px;
+    height: 56px;
+    max-width: 298px;
+    height: 56px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.166;
+    z-index: 200;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.title-color-second {
+    color: #FD9222;
+}
+
+
+.form-icon {
+    width: 24px;
+    height: 20px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+
+.input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+
+#user_email {
+    width: 313px;
+        height: 52px;
+    
+        padding: 16px 24px 16px 24px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.222;
+        letter-spacing: -0.02em;
+        color: rgba(64, 64, 64, 0.3);
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+        border-radius: 25px;
+}
+
+.form-element {
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    
+
+}
+
+
+.btn-form-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 17px 40px;
+    gap: 14px;
+    
+    width: 137px;
+    height: 52px;
+    border: none;
+    background: #FD9222;
+    border-radius: 100px;
 }
