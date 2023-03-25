@@ -13,29 +13,39 @@
   color: var(--color-orange);
 }
 
-.how_its_made {
+.how-its-made {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .list-made {
-  list-style: inside;
-  list-style-position: outside;
-  background-color: var(--color-white);
-  border-radius: 15px;
-  padding: 20px 14px;
-  margin-top: 20px;
+
 }
 
 .subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+
+  margin-bottom: 20px;
 }
 
-.subtitle .item {
-  font-size: 14px;
+.list-made .item {
   line-height: 1.29;
   letter-spacing: -0.02em;
+  padding-left: 30px;
+  margin-bottom: 18px;
+}
+
+.list-made .item:last-child{
+  margin-bottom: 0;
+}
+
+.text-made {
+  list-style-position: outside;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 20px 14px;
+  margin-top: 20px;
 }
