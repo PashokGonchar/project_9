@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', event => {
   const sidebarElement = document.getElementById('sidebar');
-  const openBtnElement = document.querySelector('.btn-open-menu');
-  const closeBtnElement = document.querySelector('.btn-close-menu');
+  const openBtnElement = document.querySelector('.open-menu-icon');
+  const closeBtnElement = document.querySelector('.close-menu-icon');
   const menuLinks = document.querySelectorAll('.mobile-menu-list-link');
   menuLinks.forEach(item => {
     item.addEventListener('click', () => {
