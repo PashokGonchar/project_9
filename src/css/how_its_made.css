@@ -27,6 +27,10 @@
   position: relative;
 }
 
+.image{
+  border-radius: 15px;
+}
+
 .play {
   position: absolute;
   background-image: url(../img/play.svg);
