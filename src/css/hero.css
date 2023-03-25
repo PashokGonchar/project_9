@@ -1,0 +1,113 @@
+.hero-section {
+  padding: 0px 20px 72px 20px;
+}
+
+/* фото бекграунд додам після цієї перевірки */
+
+.hero-container {
+  width: 100%;
+  max-width: 335px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 396px;
+
+  padding-bottom: 20px;
+
+  background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+    url(../images/);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-color: var(--color-orange);
+}
+
+.hero-title {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+.hero-button-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-button {
+  border-radius: 100px;
+
+  padding: 12px 28px;
+
+  cursor: pointer;
+
+  color: var(--color-white);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  transition: background-color var(--time-duration) var(--time-distribution),
+    color var(--time-duration) var(--time-distribution),
+    border var(--time-duration) var(--time-distribution);
+}
+.hero-button.сolored {
+  border: none;
+  background-color: var(--color-orange);
+}
+.hero-button.transparent {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.hero-button.сolored:hover,
+.hero-button.сolored:focus {
+  background-color: #fcf1e0;
+  color: var(--color-orange);
+}
+.hero-button.transparent:hover,
+.hero-button.transparent:focus {
+  border: 1px solid var(--color-orange);
+  color: var(--color-orange);
+}
+
+.hero-button.scroll {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 32px;
+}
+
+.elips-btn-hero {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 28px;
+  width: 28px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  color: var(--color-orange);
+  transition: background-color var(--time-duration) var(--time-distribution),
+    color var(--time-duration) var(--time-distribution);
+}
+
+.icon-btn-hero {
+  fill: currentColor;
+}
+
+.hero-button.scroll:hover,
+.hero-button.scroll:focus {
+  color: var(--color-orange);
+}
+
+.hero-button.scroll:hover .elips-btn-hero,
+.hero-button.scroll:focus .elips-btn-hero {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
