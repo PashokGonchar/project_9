@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project_9/assets/index-b079f6df.js"></script>
-    <link rel="stylesheet" href="/project_9/assets/index-b61440da.css">
+    <link rel="stylesheet" href="/project_9/assets/index-6f6d6007.css">
   </head>
   <body>
     <!-- =============1==================== -->
@@ -522,10 +522,42 @@
             and handcrafted with the utmost care, each piece is a work of art
             that is sure to please.
         </p>
-        <button class="btn-subscribe" type="button">Subscribe</button>
-
+        <button class="btn-subscribe" data-modal-open type="button">Subscribe</button>
        
     </div>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close" type="button" data-modal-close>
+                <svg class="close-icon">
+                    <use href="/project_9/assets/icons-96ffd99a.svg#icon-close-black-18dp-2-1"></use>
+    
+                </svg>
+    
+            </button>
+            <div class="thumb-img">
+                <img src="/project_9/assets/subscribe_mobile@2x-1ecdb107.jpg" alt="Chocolate">
+    
+            </div>
+            <form class="form-modal">
+                <p class="title-modal">Explore our <br> <span class="title-color-second">new chocolate</span> first!</p>
+                <div class="form-element">
+    
+                    <!-- <label class="form-label" for="user_email">Email</label>  -->
+                    <div class="input-wrap">
+                        <input type="email" name="user_email" id="user_email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required />
+    
+    
+                    </div>
+                    <button class="btn-form-send" type="submit">Submit</button>
+                </div>
+    
+    
+            </form>
+    
+        </div>
+    </div>
+
 </section>
     <!-- =============10==================== -->
     
