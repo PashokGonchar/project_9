@@ -11,7 +11,7 @@
 
     @media screen and (min-width: 768px) {
         .subscribe {
-            /*padding-top: 72px;*/
+            
             padding-bottom: 72px;
             
         }
@@ -191,12 +191,12 @@ color: var(--color-white);
     display: flex;
     position: relative;
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 24px;
+    height: 24px;
     fill: white;
     stroke: white;
     margin: 0 auto;
-    /*z-index: 100;*/
+    
 }
 
 
