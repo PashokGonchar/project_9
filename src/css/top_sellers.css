@@ -34,14 +34,74 @@ color: var(--color-black);
         max-width: 1136px;
     }
 }
-
-.top-sellers {
+.top-sellers{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+/* .blocks-imag {
+    margin-bottom: 20px;
+}  */
+@media screen and (max-width: 1200px){
+    .last {
+        display: none;
+        
+    } 
+} 
+@media screen and (min-width: 768px){
+    .top-sellers {
+        width: 704px;
+    }
+    .img-chocolate {
+        width: 344px;
+        height: 464px; 
+    }
+    .blocks-imag {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 32px;
+    } 
+    .text-btm {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* flex-grow: 1; */
+    } 
+    .text-about-chocolate {
+        width: 306px;
+        height: 100%;
+        
+    } 
+}
+@media screen and (min-width: 1200px){
+    .top-sellers {
+        width: 1136px;
+    }
+    .img-chocolate {
+        width: 368px;
+        height: 464px; 
+    }
+    .blocks-imag {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 32px;
+    } 
+   
+    .text-about-chocolate {
+        width: 407px;
+        height: 100%;
+        
+    } 
+} 
 .img-chocolate {
     border-radius: 15px;  
+    width: 335px;
+    height: 464px;
 }
 .text-about-chocolate {
     font-weight: 400;
@@ -50,6 +110,8 @@ color: var(--color-black);
     letter-spacing: 0.02em;
     color: var(--color-black);
     text-align: left;
+    /* margin-top: 20px;
+    margin-bottom: 32px; */
 }
 .btn-buy-now {
     color: var(--color-white);
@@ -71,5 +133,5 @@ color: var(--color-black);
 .btn-buy-now:hover,
 .btn-buy-now:focus {
     color: var(--color-orange);
-    background-color: rgba(252, 241, 224, 1);
+    background-color: var(--color-light-orange);
 }
