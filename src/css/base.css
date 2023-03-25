@@ -8,6 +8,10 @@
   --time-duration: 250ms;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
