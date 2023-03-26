@@ -18,3 +18,25 @@ new Swiper('.reviews-swiper', {
     dynamicMainBullets: 2.5,
   },
 });
+
+new Swiper('.products-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  breakpoints: {
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 18,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 18,
+    },
+  },
+  pagination: {
+    el: '.products-swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 9,
+
+  },
+});

@@ -1,6 +1,6 @@
 <section class="reviews" id="chocolate-is-love">
   <div class="container">
-    <h2 class="title"><span class="title-slogan">Chocolate</span> is loved</h2>
+    <h2 class="reviews-title"><span class="title-slogan">Chocolate</span> is loved</h2>
 
     <div class="reviews-swiper swiper">
       <ul class="reviews-list swiper-wrapper">
@@ -119,32 +119,44 @@
 
     <button class="reviews-button" type="button">Leave a review</button>
 
-    <div class="visually-hidden">
-      <button type="button" data-modal-close>
-        <svg>
-          <use href="./img/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <h2>Leave a review about <span>our chocolate</span></h2>
-      <form name="modal-form" autocomplete="off" novalidate>
-        <label>
-          <span>Name</span>
-          <input type="text" name="user-name" placeholder="Name" />
-        </label>
-        <label>
-          <span>Email</span>
-          <input type="email" name="user-email" placeholder="Email" />
-        </label>
-        <label>
-          <span>Phone</span>
-          <input type="tel" name="user-phone" placeholder="Phone number" />
-        </label>
-        <label>
-          <span>Comment</span>
-          <textarea name="user-message" placeholder="Enter text"></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
+    <div class="reviews-modal-wrapper reviews-modal-wrapper-hidden">
+      <div class="reviews-modal-container">
+        <div class="reviews-modal">
+          <button class="reviews-modal-close-button" type="button">
+            <svg class="reviews-modal-close-icon">
+              <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="reviews-modal-title">
+            Leave a review
+            about <span class="title-slogan">our&nbsp;chocolate</span>
+          </h2>
+          <form name="reviews-modal-form" autocomplete="off" novalidate>
+            <label class="reviews-modal-label">
+              <span class="visually-hidden">Name</span>
+              <input class="reviews-modal-field" type="text" name="user-name" placeholder="Name" />
+            </label>
+            <label class="reviews-modal-label">
+              <span class="visually-hidden">Email</span>
+              <input class="reviews-modal-field" type="email" name="user-email" placeholder="Enter your email" />
+            </label>
+            <label class="reviews-modal-label">
+              <span class="visually-hidden">Phone</span>
+              <span class="reviews-modal-field-flag">
+                <span class="reviews-modal-field-flag-icon"></span>
+                <span class="reviews-modal-field-flag-tel">+380</span>
+              </span>
+              <input class="reviews-modal-field reviews-modal-field-phone" type="tel" name="user-phone" placeholder="Phone number" />
+            </label>
+            <label class="reviews-modal-label reviews-modal-label--textarea">
+              <span class="visually-hidden">Comment</span>
+              <textarea class="reviews-modal-field reviews-modal-field--textarea" name="user-message" placeholder="Enter text"></textarea>
+            </label>
+            <button class="reviews-button reviews-button-secondary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
