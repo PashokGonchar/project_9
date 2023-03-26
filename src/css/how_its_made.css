@@ -26,6 +26,13 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .how-its-made {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+
 .list-made {
   position: relative;
 }
@@ -36,15 +43,7 @@
 
 .image {
   border-radius: 15px;
-  height: 500px;
 }
-
-@media screen and (min-width: 768px) {
-  .image {
-    height: 400px;
-  }
-}
-
 
 .play {
   position: absolute;
@@ -68,6 +67,7 @@
 }
 
 .subtitle {
+  position: relative;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -75,9 +75,28 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .subtitle {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle:after {
+    content: "";
+    width: 256px;
+    height: 0;
+    border: 1.5px solid #D9D9D9;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 127px;
+    left: 323px;
+  }
+}
+
 .list-made .item {
   line-height: 1.29;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.0em;
   padding-left: 16px;
   margin-bottom: 18px;
 }
@@ -96,6 +115,22 @@
 
 @media screen and (min-width: 768px) {
   .text-made {
-   width: 614px;
+    width: 614px;
+    padding: 32px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .text-made {
+    margin-top: 0;
+    padding-bottom: 94px;
+    width: 516px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop-none {
+    display: none;
+  }
+}
+
