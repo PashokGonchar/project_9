@@ -1,0 +1,52 @@
+.unique-components-text {
+    width: 100%;
+    max-width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 24px;
+    padding-top: 0;
+    background-color: aquamarine;
+}
+
+.title-unique-components {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: red;
+}
+
+.taste-unique-components {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #FD9222;
+}
+
+.backstory-unique-components {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.kinds-unique-components {
+    width: 100%;
+    max-width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+}
