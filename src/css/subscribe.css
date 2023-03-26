@@ -1,5 +1,5 @@
 .subscribe {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/production_mobile@2x.jpg');
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/production_mobile.jpg');
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
@@ -17,7 +17,7 @@
         }
     }
 
-   /* @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -27,7 +27,8 @@
                 url('/img/production_mobile@2x.jpg');
         }
     }
-        @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      
+    /*@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
         screen and (min-resolution: 190dpi) and (min-width: 768px),
         screen and (min-resolution: 2dppx) and (min-width: 768px) {
             .subscribe {
@@ -49,11 +50,10 @@
 
 .subscribe-title {
 
-
-font-size: 24px;
-line-height: 1.166;
-text-align: center;
-letter-spacing: -0.03em;
+        font-size: 24px;
+        line-height: 1.166;
+        text-align: center;
+        letter-spacing: -0.03em;
 
 color: var(--color-white);
 
@@ -116,175 +116,246 @@ color: var(--color-white);
 
     /*  Модальне вікно   */
 
-.backdrop {
-    position: fixed;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
-    align-items: flex-end;
+.subscribe-backdrop {
+        position: fixed;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+        align-items: flex-end;
     
 
 }
 
-.modal {
-    position: relative;
-    width: 538px;
-    height: 412px;
-    max-width: 538px;
-    background: #E2E2E2;
-    border-radius: 20px;
-    padding: 0;
-
+.subscribe-modal {
+        position: relative;
+        width: 311px;
+        height: 350px;
+        max-width: 538px;
+        background: #E2E2E2;
+        border-radius: 20px;
+        padding: 0;
+             
+}
+@media screen and (min-width: 768px){
+    .subscribe-modal {
+        width: 538px;
+        height: 412px;
+    }
+    
 }
 
-
 .thumb-img {
-    height: 196px;
-    width: 538px;
-    position: absolute;
-    top: 0;
-    left: 0;
+        height: 169px;
+        width: 311px;
+        position: absolute;
+        top: 0;
+        left: 0;
 
+}
+@media screen and (min-width: 768px){
+    .thumb-img {
+        height: 196px;
+        width: 538px;
+        }
+    
 }
 
 .thumb-img > img {
-    display: block;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+        display: block;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
 }
 
 
-.modal-close {
+.subscribe-modal-close {
         position: absolute;
         top: 24px;
         right: 24px;
         background: transparent;
-        border: 4px solid #FFFFFF;
         border: none;
         width: 24px;
         height: 24px;
-        cursor: pointer;
-        z-index: 20;
-}
-
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-    transform: scale(0);
-
+        
 }
 
 .close-icon {
-    display: flex;
-    position: relative;
-    display: block;
-    width: 24px;
-    height: 24px;
-    fill: white;
-    stroke: white;
-    margin: 0 auto;
+       
+        display: block;
+        width: 24px;
+        height: 24px;
+        stroke: white;
+        margin-right: 20px;
+        
+
+}
+
+.subscribe-backdrop.is-hidden {
+       opacity: 0;
+       visibility: hidden;
+       pointer-events: none;
+}
+
+/*.backdrop.is-hidden .modal {
+       transform: scale(0);
+
+}*/
+
+
+              /* Form modal */
+
+.subscribe-form-modal {
+       max-width: 263px;
+       width: 100%;
+       position: absolute;
+       bottom: 40px;
+      
+
+}
+@media screen and (min-width: 768px) {
+    .subscribe-form-modal {
+            max-width: 458px;
+            width: 100%;
+            position: absolute;
+            gap: 14px;
     
+        }
 }
 
 
-/* Form modal */
-
-.form-modal {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-
-}
-
-.title-modal {
-    width: 298px;
-    height: 56px;
-    max-width: 298px;
-    height: 56px;
+.subscribe-title-modal {
+   
+    height: 48px;
+    max-width: 263px;
+    width: 100%;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.166;
-    z-index: 50;
+    font-size: 20px;
+    line-height: 1.2;
+    
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #111111;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-left: 24px;
+}
+@media screen and (min-width: 768px){
+    .subscribe-title-modal {
+        width: 298px;
+        height: 56px;
+        max-width: 298px;
+        font-size: 24px;
+        line-height: 1.166;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    
 }
 
-.title-color-second {
+.subscribe-title-color-second {
     color: #FD9222;
 }
 
 
-.form-icon {
-    width: 24px;
-    height: 20px;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    cursor: pointer;
 
-}
-
-.input-wrap {
-    position: relative;
+.subscribe-input-wrap {
+    
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    justify-content: space-between;
+    max-width: 263px;
+    width: 100%;
+    height: 45px;
+    gap: 14px;
+    margin-right: 24px;
+    margin-left: 24px;
 }
 
+@media screen and (min-width: 768px) {
+    .subscribe-input-wrap {
+        max-width: 458px;
+        width: 100%;
+        height: 56px;
+        gap: 14px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+       
+}
+@media screen and (min-width: 1200px) {
+    .subscribe-input-wrap {
+        width: 458px;
+        height: 56px;
+        gap: 14px;
+       margin-top: 24px;
+       margin-right: 24px;
+       margin-left: 24px;
+    }
+
+}
 
 #user_email {
-        width: 313px;
-        height: 52px;
-        padding: 16px 24px 16px 24px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.222;
-        letter-spacing: -0.02em;
+        width: 163px;
+        height: 45px;
+        padding-left: 18px;
+        font-size: 14px;
+        line-height: 1.214;
         color: rgba(64, 64, 64, 0.3);
         border: 1.5px solid rgba(17, 17, 17, 0.05);
         filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
         border-radius: 25px;
 }
-
-.form-element {
-
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    
-
+@media screen and (min-width: 768px) {
+        #user_email {
+            font-size: 18px;
+            line-height: 1.222;
+            letter-spacing: -0.02em;
+            width: 313px;
+            height: 52px;
+        }
 }
 
-.btn-form-send {
+#user_email:focus,
+#user_email:hover
+ {
+    border: 1.5px solid #FD9222;
+}
+
+
+
+.subscribe-btn-form-send {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    padding: 17px 40px;
-    gap: 14px;
-    width: 137px;
-    height: 52px;
+    line-height: 1.214;
+    color: var(--color-white);
+    width: 100px;
+    height: 45px;
     border: none;
     background: #FD9222;
     border-radius: 100px;
+    transition-duration: 0.4s;
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-btn-form-send {
+        width: 137px;
+        height: 52px;
+    }
+
+}
+.subscribe-btn-form-send:hover {
+    color: #FD9222;
+    background: #FCF1E0;
 }
