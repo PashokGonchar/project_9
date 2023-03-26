@@ -1,0 +1,29 @@
+:root {
+  --swiper-theme-color: var(--color-orange);
+  --swiper-pagination-bullet-size: 13px;
+  --swiper-pagination-bullet-width: 13px;
+  --swiper-pagination-bullet-height: 13px;
+  --swiper-pagination-bullet-inactive-color: rgba(17, 17, 17, 0.1);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 6.5px;
+  --swiper-pagination-bottom: 0;
+}
+
+.swiper {
+  padding-bottom: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    padding-bottom: 44px;
+  }
+}
+
+.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 13px;
+}
+
+.swiper .swiper-pagination-bullet {
+  transform: scale(1);
+}
