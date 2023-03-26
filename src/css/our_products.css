@@ -12,7 +12,7 @@
     padding-right: 52px;
     padding-left: 53px;
     margin: 0 auto;
-    background: #FFFFFF;
+    background: var(--color-white);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     text-align: center;
@@ -55,7 +55,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    color: #111111;
+    color: var(--color-black);
     background-color: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
