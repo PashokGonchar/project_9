@@ -1,0 +1,226 @@
+.hero-section {
+  padding: 0px 20px 72px 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding: 0px 32px 50px 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding: 0px 32px 72px 32px;
+  }
+}
+
+/* фото бекграунд додам після цієї перевірки */
+
+.hero-container {
+  width: 100%;
+  max-width: 335px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 396px 20px 20px 20px;
+
+  background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+    url(/img/hero_mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-color: var(--color-orange);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(/img/hero_mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 704px;
+
+    padding: 671px 40px 40px 40px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(/img/hero_tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(/img/hero_tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 1136px;
+
+    padding: 681px 40px 40px 40px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(/img/hero_desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(/img/hero_desktop@2x.jpg);
+  }
+}
+
+.hero-title {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 767px) {
+  br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-btn-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.hero-button-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-button {
+  border-radius: 100px;
+
+  padding: 12px 28px;
+
+  cursor: pointer;
+
+  color: var(--color-white);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  transition: background-color var(--time-duration) var(--time-distribution),
+    color var(--time-duration) var(--time-distribution),
+    border var(--time-duration) var(--time-distribution);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-button {
+    padding: 14px 40px;
+  }
+}
+.hero-button.сolored {
+  border: none;
+  background-color: var(--color-orange);
+}
+.hero-button.transparent {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.hero-button.сolored:hover,
+.hero-button.сolored:focus {
+  background-color: #fcf1e0;
+  color: var(--color-orange);
+}
+.hero-button.transparent:hover,
+.hero-button.transparent:focus {
+  border: 1px solid var(--color-orange);
+  color: var(--color-orange);
+}
+
+.hero-button.scroll {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero-button.scroll {
+    margin-top: 0;
+  }
+}
+
+.elips-btn-hero {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 28px;
+  width: 28px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  color: var(--color-orange);
+  transition: background-color var(--time-duration) var(--time-distribution),
+    color var(--time-duration) var(--time-distribution);
+}
+
+@media screen and (min-width: 768px) {
+  .elips-btn-hero {
+    height: 38px;
+    width: 38px;
+  }
+}
+
+.icon-btn-hero {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-btn-hero {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.hero-button.scroll:hover,
+.hero-button.scroll:focus {
+  color: var(--color-orange);
+}
+
+.hero-button.scroll:hover .elips-btn-hero,
+.hero-button.scroll:focus .elips-btn-hero {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
