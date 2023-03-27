@@ -1,16 +1,15 @@
-
 .title {
-font-weight: 600;
-font-size: 24px;
-line-height: 1.2;
-letter-spacing: 0.03em;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 50px;
-color: var(--color-orange);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: var(--color-orange);
 }
 .title-logo {
-color: var(--color-black);
+  color: var(--color-black);
 }
 .top-sellers{
     display: flex;
@@ -117,6 +116,6 @@ color: var(--color-black);
 }
 .btn-buy-now:hover,
 .btn-buy-now:focus {
-    color: var(--color-orange);
-    background-color: var(--color-light-orange);
+  color: var(--color-orange);
+  background-color: var(--color-light-orange);
 }
