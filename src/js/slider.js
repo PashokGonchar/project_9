@@ -1,6 +1,6 @@
 new Swiper('.reviews-swiper', {
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 16,
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -36,7 +36,6 @@ new Swiper('.products-swiper', {
     el: '.products-swiper-pagination',
     clickable: true,
     dynamicBullets: true,
-    dynamicMainBullets: 9,
-
+    dynamicMainBullets: 8,
   },
 });
