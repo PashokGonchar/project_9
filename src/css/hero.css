@@ -361,7 +361,7 @@
   left: 18px;
   display: flex;
   align-items: center;
-  padding: 5px 9px 5px 0px;
+  padding: 4px 9px 2px 0px;
   box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 768px) {
@@ -369,7 +369,7 @@
     top: 21px;
     left: 24px;
 
-    padding: 5px 20px 5px 0px;
+    padding: 4px 20px 2px 0px;
   }
 }
 
