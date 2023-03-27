@@ -1,15 +1,15 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-subscribe-modal-open]"),
-    closeModalBtn: document.querySelector("[data-subscribe-modal-close]"),
-    modal: document.querySelector("[data-subscribe-modal]"),
+    openModalBtn: document.querySelector('[data-subscribe-modal-open]'),
+    closeModalBtn: document.querySelector('[data-subscribe-modal-close]'),
+    modal: document.querySelector('[data-subscribe-modal]'),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    refs.modal.classList.toggle('is-hidden');
   }
 })();
 
@@ -20,8 +20,12 @@
 (() => {
   const refsReviews = {
     openModalBtn: document.querySelector('.reviews-button'),
-    closeModalBtn: document.querySelector('.reviews-modal-close-button'),
+    closeModalBtn: document.querySelector('[data-reviews-modal-close-button]'),
     modal: document.querySelector('.reviews-modal-wrapper'),
+    submitModalBtn: document.querySelector('.reviews-submit-button'),
+
+    modalPopup: document.querySelector('[data-reviews-modal-popup-wrapper]'),
+    closeModalPopupBtn: document.querySelector('[data-reviews-modal-popup-close-button]'),
   };
 
   refsReviews.openModalBtn.addEventListener('click', toggleModal);
@@ -31,8 +35,20 @@
 
   function toggleModal() {
     document.body.style.overflow = isOpen ? null : `hidden`;
-    refsReviews.modal.classList.toggle('reviews-modal-wrapper-hidden');
+    refsReviews.modal.classList.toggle('modal-wrapper-hidden');
     isOpen = !isOpen;
   }
+
+  refsReviews.submitModalBtn.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    refsReviews.modal.classList.add('modal-wrapper-hidden');
+    refsReviews.modalPopup.classList.remove('modal-wrapper-hidden');
+  });
+
+  refsReviews.closeModalPopupBtn.addEventListener('click', () => {
+    refsReviews.modalPopup.classList.add('modal-wrapper-hidden');
+    document.body.style.overflow = null;
+    isOpen = false;
+  });
 })();
 
