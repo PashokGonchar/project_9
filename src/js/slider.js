@@ -39,3 +39,24 @@ new Swiper('.products-swiper', {
     dynamicMainBullets: 8,
   },
 });
+
+new Swiper('.hero-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+  },
+  pagination: {
+    el: '.hero-swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 3,
+  },
+});

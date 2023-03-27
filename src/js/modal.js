@@ -1,18 +1,17 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-subscribe-modal-open]"),
-    closeModalBtn: document.querySelector("[data-subscribe-modal-close]"),
-    modal: document.querySelector("[data-subscribe-modal]"),
+    openModalBtn: document.querySelector('[data-subscribe-modal-open]'),
+    closeModalBtn: document.querySelector('[data-subscribe-modal-close]'),
+    modal: document.querySelector('[data-subscribe-modal]'),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    refs.modal.classList.toggle('is-hidden');
   }
 })();
-
 
 /**
  * reviews section
@@ -36,3 +35,21 @@
   }
 })();
 
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-hero-modal-open]'),
+    closeModalBtn: document.querySelector('[data-hero-modal-close]'),
+    modal: document.querySelector('[data-hero-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  let isOpen = false;
+
+  function toggleModal() {
+    document.body.style.overflow = isOpen ? null : `hidden`;
+    refs.modal.classList.toggle('is-hidden');
+    isOpen = !isOpen;
+  }
+})();
