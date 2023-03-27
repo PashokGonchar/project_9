@@ -77,6 +77,16 @@
   text-align: center;
 }
 
+.reviews-swiper-pagination {
+  margin-left: -20px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-swiper-pagination {
+    margin-left: -22px;
+  }
+}
+
 .reviews-button {
   display: block;
   margin: 0 auto;
