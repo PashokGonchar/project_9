@@ -27,8 +27,7 @@ color: var(--color-black);
         width: 335px;
     }
     .img-chocolate {
-        width: 335px;
-        height: 464px; 
+        width: 335px; 
     }
     .blocks-imag {
         display: flex;
@@ -92,10 +91,6 @@ color: var(--color-black);
         height: 100%;
     }     
 } 
-.img-chocolate {
-    border-radius: 15px;  
-    height: 464px;
-}
 .text-about-chocolate {
     font-weight: 400;
     font-size: 14px;
