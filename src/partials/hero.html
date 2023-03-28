@@ -1,12 +1,171 @@
-<section>
-  <h1>
-    Treat yourself or a loved one to our finest ingredients for a moment of pure
-    delight!
-  </h1>
+<section class="hero-section">
+  <div class="hero-container">
+    <h1 class="hero-title">
+      Treat yourself or a loved one to <br />
+      our finest ingredients for a moment <br />
+      of pure delight!
+    </h1>
+    <div class="hero-btn-item">
+      <div class="hero-button-list">
+        <button type="button" class="hero-button сolored" data-hero-modal-open>
+          Buy now
+        </button>
+        <a href="#how-its-made" class="hero-button transparent"
+          >How it’s made</a
+        >
+      </div>
 
-  <ul>
-    <li><button type="button">Buy now</button></li>
-    <li><button type="button">How it’s made</button></li>
-    <li><button type="button">scroll down</button></li>
-  </ul>
+      <a href="#our-products" class="hero-button scroll">
+        scroll down
+        <div class="elips-btn-hero">
+          <svg class="icon-btn-hero">
+            <use href="/img/icons.svg#icon-vector"></use>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
 </section>
+
+<!-- MODAL  -->
+<div class="hero-backdrop is-hidden" data-hero-modal>
+  <div class="hero-modal">
+    <button type="button" class="btn-modal-close" data-hero-modal-close>
+      <svg class="hero-modal-icon">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form name="hero-buy-now">
+      <h2><span class="color-title-hero">bUY</span> nOW</h2>
+      <div class="slide-hero-modal hero-swiper swiper">
+        <ul class="swiper-wrapper">
+          <li class="img-box-hero swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ./img/choco_100_desktop_tablet.png    1x,
+                  ./img/choco_100_desktop_tablet@2x.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/choco_100_mobile.png    1x,
+                  ./img/choco_100_mobile@2x.png 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img src="./img/choco_100_desktop_tablet.png" alt="choco" />
+            </picture>
+            <div class="choco-heft"><p>100 g</p></div>
+          </li>
+
+          <li class="img-box-hero swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ./img/choco_200_desktop_tablet.png    1x,
+                  ./img/choco_200_desktop_tablet@2x.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/choco_200_mobile.png    1x,
+                  ./img/choco_200_mobile@2x.png 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img src="./img/choco_200_desktop_tablet.png" alt="choco" />
+            </picture>
+            <div class="choco-heft"><p>200 g</p></div>
+          </li>
+          <li class="img-box-hero swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ./img/choco_300_desktop_tablet.png    1x,
+                  ./img/choco_300_desktop_tablet@2x.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/choco_300_mobile.png    1x,
+                  ./img/choco_300_mobile@2x.png 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img src="./img/choco_300_desktop_tablet.png" alt="choco" />
+            </picture>
+            <div class="choco-heft"><p>300 g</p></div>
+          </li>
+        </ul>
+        <div class="hero-swiper-pagination swiper-pagination"></div>
+      </div>
+
+      <div class="item-form-hero">
+        <label for="hero-personal-information">Personal information</label>
+        <div class="name-surname">
+          <input
+            type="text"
+            name="hero-personal-information"
+            id="hero-personal-information"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="hero-personal-information"
+            id="hero-personal-information"
+            placeholder="Surname"
+          />
+        </div>
+      </div>
+      <div class="item-form-hero">
+        <label for="hero-form-mail">Email</label>
+        <input
+          type="email"
+          name="hero-form-mail"
+          id="hero-form-mail"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="item-form-hero hero-number">
+        <label for="hero-form-number">Phone number</label>
+        <div class="icons-hero-modal">
+          <input
+            type="tel"
+            name="hero-form-number"
+            id="hero-form-number"
+            placeholder="Phone number"
+          />
+          <div class="icon-ua-phone">
+            <span class="flag-hero"></span>
+            <span class="number-hero">+380</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-form-hero">
+        <label for="hero-form-number">Card number</label>
+        <input
+          type="text"
+          name="hero-form-number"
+          id="hero-form-number"
+          placeholder="Enter card"
+        />
+      </div>
+      <div class="item-form-hero coment">
+        <label for="hero-form-comment">Comment</label>
+        <textarea
+          placeholder="Enter text"
+          name="hero-form-comment"
+          id="hero-form-comment"
+        ></textarea>
+      </div>
+
+      <button class="hero-button сolored" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
