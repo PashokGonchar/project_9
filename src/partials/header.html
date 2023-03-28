@@ -10,7 +10,11 @@
 
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a class="nav-list-link" href="../index.html">Home</a>
+          <a
+            class="nav-list-link"
+            href="https://pashokgonchar.github.io/project_9/"
+            >Home</a
+          >
         </li>
         <li class="nav-list-item">
           <a class="nav-list-link" href="#how-its-made">How it's made?</a>
@@ -22,7 +26,7 @@
           <a class="nav-list-link" href="#top-sellers">Top sellers</a>
         </li>
         <li class="nav-menu-list-item">
-          <a class="nav-menu-list-link" href="#chocolate-is-love"
+          <a class="nav-list-link" href="#chocolate-is-love"
             >Chocolate is loved</a
           >
         </li>
@@ -45,20 +49,25 @@
         </li>
       </ul>
 
-      <svg onclick="openNav()" class="open-menu-icon">
+      <svg class="open-menu-icon">
         <use href="/img/icons.svg#icon-menu"></use>
       </svg>
     </nav>
   </div>
 
   <nav id="sidebar" class="sidebar">
-    <svg onclick="closeNav()" class="close-menu-icon">
+    <svg class="close-menu-icon">
       <use href="/img/icons.svg#icon-close"></use>
     </svg>
+
     <div class="sidebar-container">
       <ul class="mobile-menu-list">
         <li class="mobile-menu-list-item">
-          <a class="mobile-menu-list-link" href="../index.html">Home</a>
+          <a
+            class="mobile-menu-list-link"
+            href="https://pashokgonchar.github.io/project_9/"
+            >Home</a
+          >
         </li>
         <li class="mobile-menu-list-item">
           <a class="mobile-menu-list-link" href="#how-its-made"
@@ -97,19 +106,3 @@
     </div>
   </nav>
 </header>
-
-<script>
-  if (window.innerWidth >= 768) {
-    function openNav() {
-      document.getElementById('sidebar').style.width = '290px';
-    }
-  } else {
-    function openNav() {
-      document.getElementById('sidebar').style.width = '250px';
-    }
-  }
-
-  function closeNav() {
-    document.getElementById('sidebar').style.width = '0';
-  }
-</script>

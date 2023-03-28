@@ -1,11 +1,11 @@
 :root {
   --swiper-theme-color: var(--color-orange);
-  --swiper-pagination-bullet-size: 13px;
-  --swiper-pagination-bullet-width: 13px;
+  --swiper-pagination-bullet-size: 28px;
+  --swiper-pagination-bullet-width: 28px;
   --swiper-pagination-bullet-height: 13px;
-  --swiper-pagination-bullet-inactive-color: rgba(17, 17, 17, 0.1);
+  --swiper-pagination-bullet-inactive-color: none;
   --swiper-pagination-bullet-inactive-opacity: 1;
-  --swiper-pagination-bullet-horizontal-gap: 6.5px;
+  --swiper-pagination-bullet-horizontal-gap: 0;
   --swiper-pagination-bottom: 0;
 }
 
@@ -19,11 +19,29 @@
   }
 }
 
-.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 28px;
-  border-radius: 13px;
+.swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  position: relative;
+  transform: scale(1) translateX(-7.5px);
+  transition: left var(--time-duration) var(--time-distribution);
 }
 
-.swiper .swiper-pagination-bullet {
-  transform: scale(1);
+.swiper .swiper-pagination-bullet:not(.swiper-pagination-bullet-active)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.1);
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-radius: 13px;
+  transform: scale(1) translateX(0);
+}
+
+.swiper .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active ~ .swiper-pagination-bullet {
+  transform: scale(1) translateX(7.5px);
 }
