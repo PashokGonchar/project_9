@@ -30,5 +30,10 @@
     <symbol id="icon-close" viewBox="0 0 10 10">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".909" d="m7.5 2.5-5 5M2.5 2.5l5 5"/>
     </symbol>
+    <symbol id="icon-play" viewBox="0 0 32 32">
+      <path fill="#f5f4f4" d="M10.909 24V8.727l14.545 7.636-14.545 7.636z" style="fill:var(--color1, #f5f4f4)"/>
+      <path fill="none" stroke="#000" stroke-width=".727" d="M10.909 24V8.727l14.545 7.636-14.545 7.636z" style="stroke:var(--color2, #000)"/>
+      <path fill="none" stroke="#fff" stroke-width=".727" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636S.364 24.635.364 16C.364 7.364 7.365.364 16 .364S31.636 7.365 31.636 16z" style="stroke:var(--color3, #fff)"/>
+    </symbol>
   </defs>
 </svg>

@@ -18,8 +18,8 @@
         .subscribe {
             padding-top: 72px;
             padding-bottom: 72px;
-           
-            
+                   
+                       
         }
     }
 
@@ -34,10 +34,11 @@
          }
         }
 
-   
-  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-         screen and (min-width: 1200px) and (min-resolution: 192dpi),
+                                   
+ @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+        screen and (min-width: 1200px) and (min-resolution: 192dpi),
          screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+
             .subscribe {
                  background-image: 
                  url(/img/production_desktop@2x.jpg),
