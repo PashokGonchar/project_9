@@ -476,6 +476,7 @@
 }
 
 .modal-popup.top-sellers {
+  display: inline-block;
   max-width: 311px;
   padding: 84px 24px 170px 68px;
 }
