@@ -42,7 +42,7 @@ new Swiper('.products-swiper', {
 
 new Swiper('.hero-swiper', {
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 16,
   breakpoints: {
     768: {
       slidesPerView: 3,
