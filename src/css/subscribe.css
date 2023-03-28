@@ -1,5 +1,7 @@
 
   .subscribe {
+         max-width: 1440px;
+         width: 100%;
         background-image: 
         linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url('/img/production_mobile@2x.jpg');
@@ -14,7 +16,9 @@
 
     @media screen and (min-width: 768px) {
         .subscribe {
-               padding-bottom: 72px;
+            padding-top: 72px;
+            padding-bottom: 72px;
+                   
                        
         }
     }
@@ -42,16 +46,24 @@
 
 .subscribe-title {
 
-        font-size: 24px;
-        line-height: 1.166;
+        font-size: 20px;
+        line-height: 1.2;
         text-align: center;
         letter-spacing: -0.03em;
 
-color: var(--color-white);
+       color: var(--color-white);
 
 }
+@media screen  and (min-width: 768px){
+    .subscribe-title {
+        font-size: 24px;
+        line-height: 1.166;
+    }
+    
+}
 .subscribe-text {
-        
+        font-size: 14px;
+        line-height: 1.285;
         text-align: center;
         color: var(--color-white);
         margin-top: 24px;
@@ -89,6 +101,7 @@ color: var(--color-white);
         background: #FD9222;
         border-radius: 100px;
         margin-top: 24px;
+        /*margin-bottom: 63px;*/
         text-align: center;
     }
 
@@ -99,6 +112,7 @@ color: var(--color-white);
             width: 172px;
             height: 50px;
             padding: 14px 40px;
+           /* margin-bottom: 72px;*/
         }
         
     }
@@ -151,6 +165,23 @@ color: var(--color-white);
     .subscribe-modal {
         width: 538px;
         height: 412px;
+    }
+    
+}
+.subscribe-modal-img {
+    width: 311px;
+    height: 169px;
+    border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: 100%;
+        width: 100%;
+}
+@media screen  and (min-width: 768px) {
+.subscribe-modal-img {
+        width: 538px;
+        height: 196px;
     }
     
 }

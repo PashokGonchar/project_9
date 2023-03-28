@@ -1,7 +1,7 @@
 <section>
 
     <div class="container subscribe">
-        <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+        <h2 class="subscribe-title">EXPLORE OUR NEW <br> CHOCOLATE FIRST</h2>
         <p class="subscribe-text">
             From the velvety texture to the rich and complex flavor,
             our New Chocolate is a true indulgence that will leave you
@@ -15,9 +15,12 @@
     <div class="subscribe-backdrop is-hidden" data-subscribe-modal>
         <div class="subscribe-modal">
             <div class="thumb-img">
-                <img srcset="./img/subscribe_mobile.jpg 1x, /img/subscribe_mobile@2x.jpg 2x" 
-                src="/img/subscribe_mobile.jpg" 
-                alt="Chocolate">
+                <picture>
+                    <source srcset="/img/subscribe_desktop_tablet.jpg, /img/subscribe_desktop_tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="/img/subscribe_mobile.jpg, /img/subscribe_mobile@2x.jpg 2x" media="(max-width: 767px)">
+                <img class="subscribe-modal-img"  src="/img/subscribe_mobile.jpg" alt="Chocolate">
+                </picture>
+                
             
             </div>
             <button class="subscribe-modal-close" data-subscribe-modal-close type="button">
