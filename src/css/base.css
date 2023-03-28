@@ -2,10 +2,17 @@
   --color-black: rgba(17, 17, 17, 1);
   --color-dark-purple: rgba(30, 24, 35, 1);
   --color-orange: rgba(253, 146, 34, 1);
-  --color-white: rgba(250, 250, 250, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-light-orange: rgba(252, 241, 224, 1);
+  --color-grey: #fafafa;
+  --color-title-pop-up: #FCF1E0;
 
   --time-distribution: cubic-bezier(0.4, 0, 0.2, 1);
   --time-duration: 250ms;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -22,11 +29,25 @@
   overflow: hidden;
 }
 
+section {
+  padding-top: 72px;
+}
+
 .container {
   width: 100%;
 
   margin: 0 auto;
   padding: 0 15px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-black);
 }
 
 @media screen and (min-width: 375px) {
@@ -36,12 +57,24 @@
 }
 
 @media screen and (min-width: 768px) {
+  section {
+    padding-top: 100px;
+  }
+
   .container {
     max-width: 734px;
+  }
+
+  h2 {
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  section {
+    padding-top: 128px;
+  }
+
   .container {
     max-width: 1166px;
   }
