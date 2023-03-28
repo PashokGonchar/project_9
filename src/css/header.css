@@ -125,6 +125,7 @@
   height: 100%;
 
   stroke: var(--color-white);
+  fill: transparent;
 
   transition: var(--time-duration) var(--time-distribution);
 }
@@ -179,6 +180,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+
+    transition: var(--time-duration) var(--time-distribution);
+  }
+
+  .nav-list-link:is(:hover, :focus) {
+    color: var(--color-orange);
   }
 
   .nav-soc-icon {
