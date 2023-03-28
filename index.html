@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project_9/assets/index-b0b137c0.js"></script>
-    <link rel="stylesheet" href="/project_9/assets/index-66403512.css">
+    <link rel="stylesheet" href="/project_9/assets/index-f6c08db5.css">
   </head>
   <body>
     <!-- =============1==================== -->
@@ -839,7 +839,7 @@
     <section>
 
     <div class="container subscribe">
-        <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+        <h2 class="subscribe-title">EXPLORE OUR NEW <br> CHOCOLATE FIRST</h2>
         <p class="subscribe-text">
             From the velvety texture to the rich and complex flavor,
             our New Chocolate is a true indulgence that will leave you
@@ -853,9 +853,12 @@
     <div class="subscribe-backdrop is-hidden" data-subscribe-modal>
         <div class="subscribe-modal">
             <div class="thumb-img">
-                <img srcset="/project_9/assets/subscribe_mobile-6c24347f.jpg 1x, /project_9/assets/subscribe_mobile@2x-1ecdb107.jpg 2x" 
-                src="/project_9/assets/subscribe_mobile-6c24347f.jpg" 
-                alt="Chocolate">
+                <picture>
+                    <source srcset="/project_9/assets/subscribe_desktop_tablet-249c5024.jpg , /project_9/assets/subscribe_desktop_tablet@2x-93b5981f.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="/project_9/assets/subscribe_mobile-6c24347f.jpg , /project_9/assets/subscribe_mobile@2x-1ecdb107.jpg 2x" media="(max-width: 767px)">
+                <img class="subscribe-modal-img"  src="/project_9/assets/subscribe_mobile-6c24347f.jpg" alt="Chocolate">
+                </picture>
+                
             
             </div>
             <button class="subscribe-modal-close" data-subscribe-modal-close type="button">
