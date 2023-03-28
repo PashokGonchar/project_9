@@ -95,7 +95,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 15px;
-  background-color: var(color-white);
+  background-color: var(--color-white);
 }
 
 .block-icon-unique-components {
