@@ -1,4 +1,4 @@
-.title {
+.title-made {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -7,20 +7,108 @@
   text-transform: uppercase;
 
   margin-bottom: 50px;
+  color: var(--color-black);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .title-slogan {
   color: var(--color-orange);
 }
 
-.how_its_made {
+.how-its-made {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .how-its-made {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+
 .list-made {
-  list-style: inside;
+  position: relative;
+}
+
+.main-image-made {
+  position: relative;
+}
+
+.image {
+  border-radius: 15px;
+}
+
+.play {
+  position: absolute;
+  background-image: url(../img/play.svg);
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.custom-inside {
+  width: 8px;
+  height: 8px;
+
+  position: absolute;
+  background-image: url(../img/custom-inside.svg);
+
+  left: 0;
+  margin-top: 5px;
+}
+
+.subtitle {
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+
+  margin-bottom: 20px;
+
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle:after {
+    content: '';
+    width: 256px;
+    height: 0;
+    border: 1.5px solid #d9d9d9;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 127px;
+    left: 323px;
+  }
+}
+
+.list-made .item {
+  line-height: 1.29;
+  letter-spacing: -0em;
+  padding-left: 16px;
+  margin-bottom: 18px;
+}
+
+.list-made .item:last-child {
+  margin-bottom: 0;
+}
+
+.text-made {
   list-style-position: outside;
   background-color: var(--color-white);
   border-radius: 15px;
@@ -28,14 +116,23 @@
   margin-top: 20px;
 }
 
-.subtitle {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33;
+@media screen and (min-width: 768px) {
+  .text-made {
+    width: 614px;
+    padding: 32px;
+  }
 }
 
-.subtitle .item {
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
+@media screen and (min-width: 1200px) {
+  .text-made {
+    margin-top: 0;
+    padding-bottom: 94px;
+    width: 516px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop-none {
+    display: none;
+  }
 }
