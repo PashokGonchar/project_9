@@ -48,21 +48,18 @@
 
 .play {
   position: absolute;
-  background-color: green;
-  border-radius: 50%;
-  border-color: white;
-  width: 44px;
-  height: 44px;
+  background-color: transparent;
+  border: none;
+  /* width: 44px;
+  height: 44px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%);
 }
 
 .play-svg {
-  fill: white;
-  stroke: black;
-  width: 20px;
-  height: 21px;
+  width: 44px;
+  height: 44px;
 }
 
 .custom-inside {
@@ -192,26 +189,21 @@
   border: #0000001a;
   border-radius: 50%;
   padding: 0;
-  background-color: #0000001a;
+  background-color: #ec0b0bfd;
 
   position: absolute;
   top: 24px;
   right: 24px;
+  stroke: black;
 
   transition: background-color;
   transition-timing-function: cubic-bezier(0.2, 0, 0.2, 1);
   transition-duration: 250ms;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: red;
-  fill: white;
-}
-
 .close-btn {
-  width: 8px;
-  height: 8px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
 }
 
