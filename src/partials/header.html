@@ -4,12 +4,13 @@
       <a href="" class="logo"
         >SIMPLY CHOCOLATE
         <svg onclick="openNav()" class="logo-icon">
-          <use href="../img/icons.svg#icon-chocolate-logo"></use></svg
-      ></a>
+          <use href="/img/icons.svg#icon-chocolate-logo"></use>
+        </svg>
+      </a>
 
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a class="nav-list-link" href="../index.html">Home</a>
+          <a class="nav-list-link" href="https://pashokgonchar.github.io/project_9/">Home</a>
         </li>
         <li class="nav-list-item">
           <a class="nav-list-link" href="#how-its-made">How it's made?</a>
@@ -21,35 +22,40 @@
           <a class="nav-list-link" href="#top-sellers">Top sellers</a>
         </li>
         <li class="nav-menu-list-item">
-          <a class="nav-menu-list-link" href="#chocolate-is-love"
+          <a class="nav-list-link" href="#chocolate-is-love"
             >Chocolate is loved</a
           >
         </li>
       </ul>
 
-      <nav class="header-nav-soc">
-        <a href="">
-          <svg class="nav-soc-icon">
-            <use href="../img/icons.svg#icon-instagram"></use>
-          </svg>
-        </a>
-        <a href="">
-          <svg class="nav-soc-icon">
-            <use href="../img/icons.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </nav>
+      <ul class="header-nav-soc">
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            <svg class="nav-soc-icon">
+              <use href="/img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/?lang=en" target="_blank">
+            <svg class="nav-soc-icon">
+              <use href="/img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-      <svg onclick="openNav()" class="open-menu-icon">
-        <use href="../img/icons.svg#icon-menu"></use>
+      <svg class="open-menu-icon">
+        <use href="/img/icons.svg#icon-menu"></use>
       </svg>
     </nav>
   </div>
 
   <nav id="sidebar" class="sidebar">
-    <svg onclick="closeNav()" class="close-menu-icon">
-      <use href="../img/icons.svg#icon-close"></use>
+    <svg class="close-menu-icon">
+      <use href="/img/icons.svg#icon-close"></use>
     </svg>
+
     <div class="sidebar-container">
       <ul class="mobile-menu-list">
         <li class="mobile-menu-list-item">
@@ -73,29 +79,22 @@
         </li>
       </ul>
 
-      <div>
-        <svg class="mobile-menu-soc-icon">
-          <use href="../img/icons.svg#icon-instagram"></use>
-        </svg>
-        <svg class="mobile-menu-soc-icon">
-          <use href="../img/icons.svg#icon-twitter"></use>
-        </svg>
-      </div>
+      <ul class="mobile-menu-soc-list">
+        <li class="mobile-menu-soc-list-item">
+          <a href="https://www.instagram.com/" target="_blank">
+            <svg class="mobile-menu-soc-icon">
+              <use href="/img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-soc-list-item">
+          <a href="https://twitter.com/?lang=en" target="_blank">
+            <svg class="mobile-menu-soc-icon">
+              <use href="/img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
 </header>
-<script>
-  if (window.innerWidth >= 768) {
-    function openNav() {
-      document.getElementById('sidebar').style.width = '290px';
-    }
-  } else {
-    function openNav() {
-      document.getElementById('sidebar').style.width = '250px';
-    }
-  }
-
-  function closeNav() {
-    document.getElementById('sidebar').style.width = '0';
-  }
-</script>
