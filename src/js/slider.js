@@ -1,20 +1,20 @@
-new Swiper('.reviews-swiper', {
+new Swiper('.top-sellers-swiper', {
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 16,
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 16,
     },
     1200: {
       slidesPerView: 3,
-      spaceBetween: 28,
+      spaceBetween: 16,
     },
   },
   pagination: {
-    el: '.reviews-swiper-pagination',
+    el: '.top-sellers-swiper-pagination',
     clickable: true,
     dynamicBullets: true,
-    dynamicMainBullets: 2.5,
+    dynamicMainBullets: 3,
   },
 });
