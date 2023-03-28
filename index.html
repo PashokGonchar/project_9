@@ -19,8 +19,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/project_9/assets/index-9a78d833.js"></script>
-    <link rel="stylesheet" href="/project_9/assets/index-c698fd38.css">
+    <script type="module" crossorigin src="/project_9/assets/index-486d98e5.js"></script>
+    <link rel="stylesheet" href="/project_9/assets/index-07e63823.css">
   </head>
   <body>
     <!-- =============1==================== -->
@@ -493,9 +493,16 @@
     <!-- =============5==================== -->
     <section id="how-its-made">
   <div class="container">
-    <h2 class="title-made">HOW IT'S <span class="title-slogan">MADE ?</span></h2>
+    <h2 class="title-made">
+      HOW IT'S <span class="title-slogan">MADE ?</span>
+    </h2>
     <div class="how-its-made">
       <div class="main-image-made">
+        <button type="button" class="play" data-modal-made-open>
+          <svg class="play-svg">
+            <use href="/project_9/assets/play-5b59b3d3.svg"></use>
+          </svg>
+        </button>
         <picture>
           <source
             srcset="/project_9/assets/made_desktop-59c84696.jpg , /project_9/assets/made_desktop@2x-f0460f87.jpg 2x"
@@ -511,7 +518,24 @@
           />
           <img class="image" src="/project_9/assets/made_mobile-8b46db34.jpg" alt="how_its_made" />
         </picture>
-        <span class="play"></span>
+      </div>
+      <div class="backdrop is-hidden" data-made-modal>
+        <div class="modal">
+          <button type="button" class="modal-close-btn" data-modal-made-close>
+            <svg class="close-btn">
+              <use href="/project_9/assets/icons-96ffd99a.svg#icon-close"></use>
+            </svg>
+          </button>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9MBrCCCrvDA?start=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <div class="text-made">
         <h3 class="subtitle">
