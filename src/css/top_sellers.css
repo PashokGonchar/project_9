@@ -1,15 +1,15 @@
 .title {
-font-weight: 600;
-font-size: 24px;
-line-height: 1.2;
-letter-spacing: 0.03em;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 50px;
-color: var(--color-orange);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: var(--color-orange);
 }
 .title-logo {
-color: var(--color-black);
+  color: var(--color-black);
 }
 .top-sellers{
     display: flex;
@@ -18,22 +18,22 @@ color: var(--color-black);
 }
 @media screen and (max-width: 1200px){
     .last {
-        display: none;     
-    } 
-} 
+        display: none;
+    }
+}
 @media screen and (max-width: 767px){
     .top-sellers {
         width: 335px;
     }
     .img-chocolate {
         width: 335px;
-        border-radius: 15px; 
+        border-radius: 15px;
     }
     .blocks-imag {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    } 
+    }
     .btn-buy-now {
         margin-top: 20px;
       }
@@ -49,11 +49,11 @@ color: var(--color-black);
     width: 120px;
     height: 41px;
     padding: 12px 28px;
-} 
+}
 }
 @media screen and (min-width: 768px){
     .img-chocolate {
-        width: 344px; 
+        width: 344px;
         border-radius: 15px;
     }
     .blocks-imag {
@@ -62,11 +62,11 @@ color: var(--color-black);
         justify-content: center;
         gap: 16px;
         margin-bottom: 32px;
-    } 
+    }
     .text-about-chocolate-two {
         width: 306px;
-        height: 100%;   
-    } 
+        height: 100%;
+    }
     .text-about-chocolate-one {
         display: none;
     }
@@ -79,12 +79,12 @@ color: var(--color-black);
         width: 162px;
         height: 50px;
         padding: 14px 40px;
-    } 
+    }
 }
 @media screen and (min-width: 1200px){
     .text-btm {
         width: 1136px;
-    } 
+    }
     .img-chocolate {
         width: 368px;
         border-radius: 15px;
@@ -95,12 +95,12 @@ color: var(--color-black);
         justify-content: center;
         gap: 16px;
         margin-bottom: 32px;
-    } 
+    }
     .text-about-chocolate-two {
         width: 407px;
         height: 100%;
-    }    
-} 
+    }
+}
 .text-about-chocolate {
     font-weight: 400;
     font-size: 14px;
@@ -117,12 +117,12 @@ color: var(--color-black);
     font-weight: 600;
     font-size: 14px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-buy-now:hover,
 .btn-buy-now:focus {
-    color: var(--color-orange);
-    background-color: var(--color-light-orange);
+  color: var(--color-orange);
+  background-color: var(--color-light-orange);
 }
 
 
@@ -519,7 +519,7 @@ color: var(--color-black);
     font-weight: 600;
     font-size: 14px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* SWIPER  */

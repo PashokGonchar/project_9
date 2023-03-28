@@ -1,0 +1,66 @@
+.modal-popup {
+  min-height: 350px;
+  padding: 84px 14px 14px 58px;
+  background-image: url('/img/thanks_mobile.png'),
+  linear-gradient(var(--color-orange), var(--color-orange));
+  background-size: 89%, 100%;
+  background-position: 0 bottom;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+  .modal-popup {
+    background-image: url('/img/thanks_mobile@2x.png'),
+    linear-gradient(var(--color-orange), var(--color-orange));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-popup {
+    min-height: 414px;
+    padding: 163px 49px 49px 170px;
+    background-image: url('/img/thanks_dekstop_tablet.png'),
+    linear-gradient(var(--color-orange), var(--color-orange));
+    background-size: 54%, 100%;
+  }
+
+  @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+    .modal-popup {
+      background-image: url('/img/thanks_dekstop_tablet@2x.png'),
+      linear-gradient(var(--color-orange), var(--color-orange));
+    }
+  }
+}
+
+.modal-popup-text-container {
+  max-width: 276px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-popup-text-container {
+    margin-left: 0;
+  }
+}
+
+.modal-popup-title {
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-title-pop-up);
+  white-space: pre-line;
+}
+
+.modal-popup-text {
+  max-width: 180px;
+  line-height: 1.14;
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-popup-text {
+    max-width: initial;
+  }
+}
+
