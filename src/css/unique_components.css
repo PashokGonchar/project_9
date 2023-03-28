@@ -4,7 +4,6 @@
     }
   }
 
- 
 .unique-components-text {
   width: 100%;
   margin-left: auto;
@@ -31,7 +30,7 @@
   line-height: 24px;
   letter-spacing: -0.03em;
   text-align: center;
-  color: var(--color-orangerange);
+  color: var(--color-orange);
 }
   
 .backstory-unique-components {
