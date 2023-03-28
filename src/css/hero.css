@@ -332,13 +332,12 @@
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   outline: none;
-  padding: 18px 14px 18px 14px;
+  padding: 14px 14px 14px 18px;
 }
 
 @media screen and (min-width: 768px) {
   .item-form-hero input {
     max-width: 513px;
-    height: 66px;
 
     padding: 22px 24px 22px 24px;
   }
@@ -357,19 +356,21 @@
 }
 .icon-ua-phone {
   position: absolute;
-  top: 14px;
+  height: 25px;
+  top: 10px;
   left: 18px;
   display: flex;
   align-items: center;
-  padding: 4px 9px 2px 0px;
+  padding-right: 8px;
   box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 768px) {
   .icon-ua-phone {
-    top: 21px;
-    left: 24px;
+    height: 32px;
+    top: 16px;
 
-    padding: 4px 20px 2px 0px;
+    left: 24px;
+    padding-right: 32px;
   }
 }
 
@@ -385,6 +386,55 @@
     #ffd700 50%,
     #ffd700 100%
   );
+}
+
+.mc-card-logo {
+  position: relative;
+}
+.hero-icon-card {
+  display: flex;
+  top: 16px;
+  right: 19px;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .hero-icon-card {
+    top: 21px;
+    right: 31px;
+  }
+}
+
+.red-circle {
+  margin-right: -6px;
+  display: inline-block;
+  width: 13.5px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #ed0006;
+}
+@media screen and (min-width: 768px) {
+  .red-circle {
+    margin-right: -8px;
+
+    width: 18.3px;
+    height: 18.5px;
+  }
+}
+
+.orange-circle {
+  display: inline-block;
+  width: 13.5px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #f9a000;
+  background-image: radial-gradient(circle at left, #ff5e00 41%, #f9a000 0%);
+}
+
+@media screen and (min-width: 768px) {
+  .orange-circle {
+    width: 18.3px;
+    height: 18.5px;
+  }
 }
 @media screen and (min-width: 768px) {
   .flag-hero {
@@ -410,13 +460,13 @@
   margin-bottom: 8px;
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.16;
 }
 @media screen and (min-width: 768px) {
   .item-form-hero label {
-    font-size: 18px;
-    line-height: 1.22;
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 .item-form-hero.coment textarea {
@@ -429,7 +479,7 @@
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   outline: none;
-  padding: 18px 14px 18px 14px;
+  padding: 14px 18px 14px 18px;
 }
 @media screen and (min-width: 768px) {
   .item-form-hero.coment textarea {
@@ -467,6 +517,8 @@
 }
 
 .slide-hero-modal.swiper {
+  padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 27px;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -486,7 +538,6 @@
 }
 
 .img-box-hero {
-  width: 231px;
   height: 257px;
   display: flex;
   flex-direction: column;
@@ -501,7 +552,6 @@
 
 @media screen and (min-width: 768px) {
   .img-box-hero {
-    width: 160px;
     height: 196px;
 
     gap: 14px;
@@ -522,4 +572,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-popup.hero {
+  max-width: 311px;
+  padding: 84px 24px 170px 68px;
+}
+@media screen and (min-width: 768px) {
+  .modal-popup.hero {
+    max-width: 516px;
+    padding: 154px 44px 154px 163px;
+  }
+}
+
+.modal-popup-text-container.hero {
+  max-width: 219px;
+}
+@media screen and (min-width: 768px) {
+  .modal-popup-text-container.hero {
+    max-width: 309px;
+  }
+}
+
+.modal-popup-text.hero {
+  max-width: initial;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-popup-text.hero {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-popup-title.hero {
+    font-size: 24px;
+  }
 }

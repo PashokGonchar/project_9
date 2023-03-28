@@ -29,7 +29,9 @@
     submitModalBtn: document.querySelector('.reviews-submit-button'),
 
     modalPopup: document.querySelector('[data-reviews-modal-popup-wrapper]'),
-    closeModalPopupBtn: document.querySelector('[data-reviews-modal-popup-close-button]'),
+    closeModalPopupBtn: document.querySelector(
+      '[data-reviews-modal-popup-close-button]'
+    ),
   };
 
   refsReviews.openModalBtn.addEventListener('click', toggleModal);
@@ -43,7 +45,7 @@
     isOpen = !isOpen;
   }
 
-  refsReviews.submitModalBtn.addEventListener('click', (evt) => {
+  refsReviews.submitModalBtn.addEventListener('click', evt => {
     evt.preventDefault();
     refsReviews.modal.classList.add('modal-wrapper-hidden');
     refsReviews.modalPopup.classList.remove('modal-wrapper-hidden');
@@ -56,11 +58,18 @@
   });
 })();
 
+// hero//
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-hero-modal-open]'),
     closeModalBtn: document.querySelector('[data-hero-modal-close]'),
     modal: document.querySelector('[data-hero-modal]'),
+    submitModalBtn: document.querySelector('[data-submit-hero]'),
+
+    modalPopup: document.querySelector('[data-hero-modal-popup-wrapper]'),
+    closeModalPopupBtn: document.querySelector(
+      '[data-hero-modal-popup-close-button]'
+    ),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -73,4 +82,15 @@
     refs.modal.classList.toggle('is-hidden');
     isOpen = !isOpen;
   }
+  refs.submitModalBtn.addEventListener('click', evt => {
+    evt.preventDefault();
+    refs.modal.classList.add('is-hidden');
+    refs.modalPopup.classList.remove('modal-wrapper-hidden');
+  });
+
+  refs.closeModalPopupBtn.addEventListener('click', () => {
+    refs.modalPopup.classList.add('modal-wrapper-hidden');
+    document.body.style.overflow = null;
+    isOpen = false;
+  });
 })();
