@@ -107,18 +107,20 @@
   }
 }
 
-iframe{
+.video-made{
   width: 335px;
+  height: 500px;
 }
 
 @media screen and (min-width: 768px) {
-  iframe {
+  .video-made {
     width: 614px;
+    height: 400px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  iframe {
+  .video-made {
     width: 600px;
     height: 400px;
   }
