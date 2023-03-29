@@ -46,7 +46,6 @@
   border-radius: 15px;
 }
 
-
 .custom-inside {
   width: 8px;
   height: 8px;
@@ -107,7 +106,7 @@
   }
 }
 
-.video-made{
+.video-made {
   width: 335px;
   height: 500px;
 }
@@ -124,4 +123,29 @@
     width: 600px;
     height: 400px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .video-made {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image-made {
+    display: none;
+  }
+}
+
+.image-made {
+  position: relative;
+}
+
+.play-made {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%);
 }
