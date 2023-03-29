@@ -3,8 +3,9 @@
          max-width: 1440px;
          width: 100%;
         background-image: 
-        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url('/img/production_mobile@2x.jpg');
+        url('/img/production_mobile.jpg'),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); 
+       ;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -13,16 +14,34 @@
         padding-bottom: 62px;
         
     }
-
     @media screen and (min-width: 768px) {
         .subscribe {
             padding-top: 72px;
             padding-bottom: 72px;
                    
-                       
+                     
         }
-    }
 
+ @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+         screen and (max-width: 767px) and (min-resolution: 192dpi),
+         screen and (max-width: 767px) and (min-resolution: 2dppx) {
+             .subscribe {
+                 background-image:
+                     url(/img/production_mobile@2x.jpg),
+                     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+             }
+         }
+
+   
+ @media screen and (min-width: 768px) {
+         .subscribe {
+            
+             background-image:
+                 url(/img/production_tablet.jpg),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    
+            }
+        }
        
  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
         screen and (min-width: 768px) and (min-resolution: 192dpi),
@@ -34,17 +53,26 @@
          }
         }
 
-                                   
+ @media screen and (min-width: 1200px) {
+         .subscribe {
+            background-image:
+                 url(/img/production_desktop.jpg),
+                 linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        
+                    }
+                }
+   
  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-        screen and (min-width: 1200px) and (min-resolution: 192dpi),
+         screen and (min-width: 1200px) and (min-resolution: 192dpi),
          screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-
             .subscribe {
                  background-image: 
                  url(/img/production_desktop@2x.jpg),
                  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
                      }
                  }
+
+ 
               
 .subscribe-title {
 
@@ -52,17 +80,20 @@
         line-height: 1.2;
         text-align: center;
         letter-spacing: -0.03em;
-
-       color: var(--color-white);
+        width: 291px;
+        color: var(--color-white);
+        margin: 0 auto;
 
 }
 @media screen  and (min-width: 768px){
     .subscribe-title {
         font-size: 24px;
         line-height: 1.166;
+        width: 378px;
     }
     
 }
+
 .subscribe-text {
         display: flex;
         font-size: 14px;
@@ -100,7 +131,7 @@
         text-align: center;
     }
 
-    @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
         .btn-subscribe {
             font-size: 18px;
             line-height: 1.222;
