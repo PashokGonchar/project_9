@@ -146,13 +146,10 @@
 
     .btn-subscribe:hover,
     .btn-subscribe:focus {
-       
-        font-size: 18px;
-        line-height: 1.222;
-
+               
         color: var(--color-orange);
         background-color: #FCF1E0;
-        border-radius: 100px;
+       
     }
 
     /*  Модальне вікно   */
