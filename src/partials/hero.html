@@ -147,6 +147,7 @@
         <label for="hero-form-number">Phone number</label>
         <div class="icons-hero-modal">
           <input
+            pattern="[0-9]{9}"
             required
             type="tel"
             name="hero-form-number"
@@ -164,6 +165,7 @@
         <label for="hero-form-card-number">Card number</label>
         <div class="mc-card-logo">
           <input
+            pattern="[0-16]{16}"
             minlength="16"
             maxlength="16"
             type="text"
