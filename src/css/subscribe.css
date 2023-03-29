@@ -128,10 +128,12 @@
         align-items: center;
         padding: 12px 28px;
         border: none;
-        background: #FD9222;
+        background-color: var(--color-orange);
         border-radius: 100px;
         margin-top: 24px;
         text-align: center;
+        transition: background-color var(--time-duration) var(--time-distribution), color var(--time-duration) var(--time-distribution);
+        
     }
 
  @media screen and (min-width: 768px) {
@@ -148,14 +150,12 @@
 
     .btn-subscribe:hover,
     .btn-subscribe:focus {
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
+       
         font-size: 18px;
         line-height: 1.222;
 
-        color: #FD9222;
-        background: #FCF1E0;
+        color: var(--color-orange);
+        background-color: #FCF1E0;
         border-radius: 100px;
     }
 
@@ -172,7 +172,7 @@
         width: 100%;
         height: 100%;
         padding: 20px 0;
-        align-items: flex-end;
+        align-items: center;
         z-index: 20;
         overflow-y: scroll;
         transition: opacity var(--time-duration) var(--time-distribution), visibility var(--time-duration) var(--time-distribution);
@@ -200,8 +200,6 @@
 .subscribe-modal-img {
     width: 311px;
     height: 169px;
-    border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         height: 100%;
@@ -233,8 +231,6 @@
 
 .thumb-img > img {
         display: block;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         height: 100%;
@@ -259,7 +255,7 @@
         display: block;
         width: 24px;
         height: 24px;
-        stroke: white;
+        stroke: var(--color-white);
         margin-right: 20px;
         
 }
@@ -307,13 +303,12 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #111111;
     margin-bottom: 24px;
     margin-top: 32px;
-    /*margin-left: 24px;*/
+   
 }
 @media screen and (min-width: 768px){
     .subscribe-title-modal {
@@ -322,14 +317,13 @@
         max-width: 298px;
         font-size: 24px;
         line-height: 1.166;
-        /*margin-left: 40px;*/
-        margin-top: 40px;
+         margin-top: 40px;
     }
     
 }
 
 .subscribe-title-color-second {
-    color: #FD9222;
+    color: var(--color-orange);
 }
 
 
@@ -343,7 +337,7 @@
     width: 100%;
     height: 45px;
     margin-right: 24px;
-    /*margin-left: 24px;*/
+   
 }
 
 @media screen and (min-width: 768px) {
@@ -353,7 +347,7 @@
         height: 56px;
         gap: 14px;
         margin-right: 40px;
-        /*margin-left: 40px;*/
+       
     }
        
 }
@@ -364,12 +358,12 @@
         gap: 14px;
        margin-top: 24px;
        margin-right: 24px;
-       /*margin-left: 24px;*/
+      
     }
 
 }
 
-#user_email {
+#user_email_subscribe {
         width: 163px;
         height: 45px;
         padding-left: 18px;
@@ -381,12 +375,12 @@
         border-radius: 25px;
 }
 
-#user_email > ::placeholder {
+#user_email_subscribe > ::placeholder {
         color: rgba(64, 64, 64, 0.3);
 }
 
 @media screen and (min-width: 768px) {
-        #user_email {
+        #user_email_subscribe {
             font-size: 18px;
             line-height: 1.222;
             letter-spacing: -0.02em;
@@ -396,10 +390,10 @@
         }
 }
 
-#user_email:focus,
-#user_email:hover
+#user_email_subscribe:focus,
+#user_email_subscribe:hover
  {
-    border: 1.5px solid #FD9222;
+    border: 1.5px solid var(--color-orange);
 }
 
 
@@ -415,9 +409,9 @@
     width: 100px;
     height: 45px;
     border: none;
-    background: #FD9222;
+    background: var(--color-orange);
     border-radius: 100px;
-    transition-duration: 0.4s;
+    transition: background-color var(--time-duration) var(--time-distribution), color var(--time-duration) var(--time-distribution);
 }
 
 @media screen and (min-width: 768px) {
@@ -428,6 +422,6 @@
 
 }
 .subscribe-btn-form-send:hover {
-    color: #FD9222;
+    color: var(--color-orange);
     background: #FCF1E0;
 }
