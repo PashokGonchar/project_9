@@ -5,7 +5,7 @@
   --color-white: rgba(255, 255, 255, 1);
   --color-light-orange: rgba(252, 241, 224, 1);
   --color-grey: #fafafa;
-  --color-title-pop-up: #FCF1E0;
+  --color-title-pop-up: #fcf1e0;
 
   --time-distribution: cubic-bezier(0.4, 0, 0.2, 1);
   --time-duration: 250ms;
@@ -13,6 +13,23 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(179, 179, 179);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(134, 134, 134);
 }
 
 .visually-hidden {
