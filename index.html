@@ -19,8 +19,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/project_9/assets/index-486d98e5.js"></script>
-    <link rel="stylesheet" href="/project_9/assets/index-05ba24e7.css">
+    <script type="module" crossorigin src="/project_9/assets/index-e2e8d5a0.js"></script>
+    <link rel="stylesheet" href="/project_9/assets/index-67410ced.css">
   </head>
   <body>
     <!-- =============1==================== -->
@@ -728,12 +728,172 @@
 </ul>
 <div class="text-btm">
 <p class="text-about-chocolate-two">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-<button class="btn-buy-now colored" type="buttom" data-hero-modal-open>Buy now</button>
+<button class="btn-buy-now colored" type="buttom" data-top-sellers-modal-open>Buy now</button>
 </div>
 
 </div>
 </div>
 </section>
+
+<!-- MODAL  -->
+<div class="top-sellers-backdrop is-hidden" data-top-sellers-modal>
+    <div class="top-sellers-modal">
+      <button type="button" class="btn-modal-close-top-sellers" data-top-sellers-modal-close>
+        <svg class="top-sellers-modal-icon">
+          <use href="/project_9/assets/icons-7c89c8b5.svg#icon-close"></use>
+        </svg>
+      </button>
+  
+      <form name="top-sellers-buy-now">
+        <h2><span class="color-title-top-sellers">bUY</span> nOW</h2>
+        <div class="slide-top-sellers-modal top-sellers-swiper swiper">
+          <ul class="swiper-wrapper">
+            <li class="img-box-top-sellers swiper-slide">
+              <picture>
+                <source
+                  srcset="/project_9/assets/choco_100_desktop_tablet-55089a2a.png 1x, /project_9/assets/choco_100_desktop_tablet@2x-09556efb.png 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="/project_9/assets/choco_100_mobile-430465b5.png 1x, /project_9/assets/choco_100_mobile@2x-42bae199.png 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="/project_9/assets/choco_100_desktop_tablet-55089a2a.png" alt="choco" />
+              </picture>
+              <div class="choco-heft-top-sellers"><p>100 g</p></div>
+            </li>
+  
+            <li class="img-box-top-sellers swiper-slide">
+              <picture>
+                <source
+                  srcset="/project_9/assets/choco_200_desktop_tablet-37211f65.png 1x, /project_9/assets/choco_200_desktop_tablet@2x-ff1dea98.png 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="/project_9/assets/choco_200_mobile-eefede1a.png 1x, /project_9/assets/choco_200_mobile@2x-9f74aa52.png 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="/project_9/assets/choco_200_desktop_tablet-37211f65.png" alt="choco" />
+              </picture>
+              <div class="choco-heft"><p>200 g</p></div>
+            </li>
+            <li class="img-box-top-sellers swiper-slide">
+              <picture>
+                <source
+                  srcset="/project_9/assets/choco_300_desktop_tablet-491dec08.png 1x, /project_9/assets/choco_300_desktop_tablet@2x-f2935dbc.png 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="/project_9/assets/choco_300_mobile-1600ba94.png 1x, /project_9/assets/choco_300_mobile@2x-748bd6af.png 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="/project_9/assets/choco_300_desktop_tablet-491dec08.png" alt="choco" />
+              </picture>
+              <div class="choco-heft"><p>300 g</p></div>
+            </li>
+          </ul>
+          <div class="top-sellers-swiper-pagination swiper-pagination"></div>
+        </div>
+  
+        <div class="item-form-top-sellers">
+          <label for="top-sellers-personal-information">Personal information</label>
+          <div class="name-surname-top-sellers">
+            <input
+              type="text"
+              name="top-sellers-personal-information"
+              id="top-sellers-personal-information"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              name="top-sellers-personal-information"
+              id="top-sellers-personal-information"
+              placeholder="Surname"
+            />
+          </div>
+        </div>
+        <div class="item-form-top-sellers">
+          <label for="top-sellers-form-mail">Email</label>
+          <input
+            required
+            type="email"
+            name="top-sellers-form-mail"
+            id="top-sellers-form-mail"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="item-form-top-sellers top-sellers-number">
+          <label for="top-sellers-form-number">Phone number</label>
+          <div class="icons-top-sellers-modal">
+            <input
+              required
+              type="tel"
+              name="top-sellers-form-number"
+              id="top-sellers-form-number"
+              placeholder="Phone number"
+            />
+            <div class="icon-ua-phone-top-sellers">
+              <span class="flag-top-sellers"></span>
+              <span class="number-top-sellers">+380</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="item-form-top-sellers">
+          <label for="top-sellers-form-number">Card number</label>
+          <div class="mc-card-logo-top-sellers">
+            <input
+              minlength="16"
+              maxlength="16"
+              type="text"
+              name="top-sellers-form-number"
+              id="top-sellers-form-number"
+              placeholder="Enter card"
+            />
+            <div class="top-sellers-icon-card">
+              <span class="red-circle-top-sellers"> </span>
+              <span class="orange-circle-top-sellers"> </span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="item-form-top-sellers coment">
+          <label for="top-sellers-form-comment">Comment</label>
+          <textarea
+            placeholder="Enter text"
+            name="top-sellers-form-comment"
+            id="top-sellers-form-comment"
+          ></textarea>
+        </div>
+  
+        <button class="btn-buy-now сolored" data-submit-top-sellers type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-wrapper modal-wrapper-hidden" data-top-sellers-modal-popup-wrapper>
+    <div class="modal-container">
+      <div class="modal modal-popup top-sellers">
+        <button
+          data-top-sellers-modal-popup-close-button
+          class="modal-close-button modal-close-button-secondary"
+          type="button"
+        >
+          <svg class="modal-close-icon modal-close-icon-secondary">
+            <use href="/project_9/assets/icons-7c89c8b5.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal-popup-text-container top-sellers">
+          <h2 class="modal-popup-title top-sellers">Thank you!</h2>
+          <p class="modal-popup-text top-sellers">
+            We are glad that you ordered our chocolate and we are giving you a 20%
+            discount on all our products.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- =============8==================== -->
     <section class='reviews' id='chocolate-is-love'>
   <div class='container'>
