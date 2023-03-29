@@ -69,6 +69,8 @@ iframe {
   line-height: 1.33;
 
   margin-bottom: 20px;
+
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
