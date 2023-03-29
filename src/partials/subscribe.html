@@ -1,0 +1,50 @@
+<section>
+
+    <div class="container subscribe">
+        <h2 class="subscribe-title">EXPLORE OUR NEW <br> CHOCOLATE FIRST</h2>
+        <p class="subscribe-text">
+            From the velvety texture to the rich and complex flavor,
+            our New Chocolate is a true indulgence that will leave you
+            craving more. Made with only the finest ingredients
+            and handcrafted with the utmost care, each piece is a work of art
+            that is sure to please.
+        </p>
+        <button class="btn-subscribe" data-subscribe-modal-open type="button">Subscribe</button>
+       
+    </div>
+    <div class="subscribe-backdrop is-hidden" data-subscribe-modal>
+        <div class="subscribe-modal">
+            <div class="thumb-img">
+                <picture>
+                    <source srcset="/img/subscribe_desktop_tablet.jpg 1x, /img/subscribe_desktop_tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                    <source srcset="/img/subscribe_mobile.jpg 1x, /img/subscribe_mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <img class="subscribe-modal-img" src="/img/subscribe_mobile@2x.jpg" alt="Chocolate">
+                </picture>
+                
+            
+            </div>
+            <button class="subscribe-modal-close" data-subscribe-modal-close type="button">
+                <svg class="close-icon">
+                    <use href="/img/icons.svg#icon-close"></use>
+    
+                </svg>
+    
+            </button>
+            
+            <form class="subscribe-form-modal">
+                <p class="subscribe-title-modal">Explore our <br> <span class="subscribe-title-color-second">new chocolate</span> first!</p>
+                                      
+                    <div class="subscribe-input-wrap">
+                        <input type="email" name="user_email_subscribe" id="user_email_subscribe"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email"/>
+                            <button class="subscribe-btn-form-send" type="submit" data-subscribe-modal-close>Submit</button>
+    
+                    </div>
+                                      
+    
+            </form>
+    
+        </div>
+    </div>
+
+</section>
