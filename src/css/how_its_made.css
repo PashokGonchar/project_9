@@ -34,11 +34,6 @@
   }
 }
 
-iframe {
-  width: 335px;
-  background-size: cover;
-}
-
 .list-made {
   position: relative;
 }
@@ -50,6 +45,7 @@ iframe {
 .image {
   border-radius: 15px;
 }
+
 
 .custom-inside {
   width: 8px;
@@ -113,16 +109,19 @@ iframe {
   }
 }
 
-@media screen and (min-width: 768px) {
-  iframe {
-    width: 614px;
-  background-size: cover;
-  }
+iframe{
+  width: 335px;
 }
 
 @media screen and (min-width: 768px) {
   iframe {
+    width: 614px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  iframe {
     width: 600px;
-  background-size: cover;
+    height: 400px;
   }
 }
