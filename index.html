@@ -187,7 +187,11 @@
                 srcset="/project_9/assets/choco_100_mobile-430465b5.png 1x, /project_9/assets/choco_100_mobile@2x-42bae199.png 2x"
                 media="(max-width:767px)"
               />
-              <img src="/project_9/assets/choco_100_desktop_tablet-55089a2a.png" alt="choco" />
+              <img
+                src="/project_9/assets/choco_100_desktop_tablet-55089a2a.png"
+                alt="choco"
+                loading="lazy"
+              />
             </picture>
             <div class="choco-heft"><p>100 g</p></div>
           </li>
@@ -202,7 +206,11 @@
                 srcset="/project_9/assets/choco_200_mobile-eefede1a.png 1x, /project_9/assets/choco_200_mobile@2x-9f74aa52.png 2x"
                 media="(max-width:767px)"
               />
-              <img src="/project_9/assets/choco_200_desktop_tablet-37211f65.png" alt="choco" />
+              <img
+                src="/project_9/assets/choco_200_desktop_tablet-37211f65.png"
+                alt="choco"
+                loading="lazy"
+              />
             </picture>
             <div class="choco-heft"><p>200 g</p></div>
           </li>
@@ -216,7 +224,11 @@
                 srcset="/project_9/assets/choco_300_mobile-1600ba94.png 1x, /project_9/assets/choco_300_mobile@2x-748bd6af.png 2x"
                 media="(max-width:767px)"
               />
-              <img src="/project_9/assets/choco_300_desktop_tablet-491dec08.png" alt="choco" />
+              <img
+                src="/project_9/assets/choco_300_desktop_tablet-491dec08.png"
+                alt="choco"
+                loading="lazy"
+              />
             </picture>
             <div class="choco-heft"><p>300 g</p></div>
           </li>
@@ -254,6 +266,7 @@
         <label for="hero-form-number">Phone number</label>
         <div class="icons-hero-modal">
           <input
+            pattern="[0-9]{9}"
             required
             type="tel"
             name="hero-form-number"
@@ -271,6 +284,7 @@
         <label for="hero-form-card-number">Card number</label>
         <div class="mc-card-logo">
           <input
+            pattern="[0-16]{16}"
             minlength="16"
             maxlength="16"
             type="text"
@@ -294,9 +308,7 @@
         ></textarea>
       </div>
 
-      <button class="hero-button сolored" type="submit">
-        Submit
-      </button>
+      <button class="hero-button сolored" type="submit">Submit</button>
     </form>
   </div>
 </div>
