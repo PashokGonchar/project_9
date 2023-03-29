@@ -1,119 +1,186 @@
-<section>
-  <h2><span>Chocolate</span> is loved</h2>
-  <ul>
-    <li>
-      <img
-        srcset="
-          ./img/victoria_dobrzhanska.png    1x,
-          ./img/victoria_dobrzhanska@2x.png 2x
-        "
-        src="./img/victoria_dobrzhanska.png"
-        alt="Victoria Dobrzhanska"
-        width="80"
-      />
-      <h3>Victoria Dobrzhanska</h3>
-      <p>
-        I love this chocolate bar. Perfect combination of light crispy wafer,
-        covered in a thin layer chocolate.
-      </p>
-    </li>
-    <li>
-      <img
-        srcset="./img/nazar_babenko.png 1x, ./img/nazar_babenko@2x.png 2x"
-        src="./img/nazar_babenko.png"
-        alt="Nazar Babenko"
-        width="80"
-      />
-      <h3>Nazar Babenko</h3>
-      <p>
-        This chocolate confection is a delight! A delight! The wafer is light
-        and crisp, the hazelnut cream is smooth, and the chocolate is good.
-      </p>
-    </li>
-    <li>
-      <img
-        srcset="./img/olena_kampusch.png 1x, ./img/olena_kampusch@2x.png 2x"
-        src="./img/olena_kampusch.png"
-        alt="Olena Kampusch"
-        width="80"
-      />
-      <h3>Olena Kampusch</h3>
-      <p>
-        Chocolate is a family favourite treat. Love the delicious smooth
-        chocolate and the creaminess inside. The wafer is soft but crunchy.
-      </p>
-    </li>
-    <li>
-      <img
-        srcset="./img/natalia_sus.png 1x, ./img/natalia_sus@2x.png 2x"
-        src="./img/natalia_sush.png"
-        alt="Natalia Sus"
-        width="80"
-      />
-      <h3>Natalia Sus</h3>
-      <p>
-        The chocolate assortment was delicious. Both dark and milk chocolate
-        pieces were smooth and just right on the sweetness level.
-      </p>
-    </li>
-    <li>
-      <img
-        srcset="
-          ./img/danilo_nottingham.png    1x,
-          ./img/danilo_nottingham@2x.png 2x
-        "
-        src="./img/danilo_nottingham.png"
-        alt="Danilo Nottingham"
-        width="80"
-      />
-      <h3>Danilo Nottingham</h3>
-      <p>
-        This is delicious. It so rich and flavorful you don’t need to use as
-        many. I love topping an apple with almond butter and these chips for a
-        snack.
-      </p>
-    </li>
-    <li>
-      <img
-        srcset="./img/irina_tydnyuk.png 1x, ./img/irina_tydnyuk@2x.png 2x"
-        src="./img/irina_tydnyuk.png"
-        alt="Irina Tydnyuk"
-        width="80"
-      />
-      <h3>Irina Tydnyuk</h3>
-      <p>
-        This is simply the best chocolate around, and I'm just thrilled to
-        support a local company! Best local chocolate - world class :)
-      </p>
-    </li>
-  </ul>
-  <button type="button">Leave a review</button>
+<section class='reviews' id='chocolate-is-love'>
+  <div class='container'>
+    <h2 class='reviews-title'><span class='title-slogan'>Chocolate</span> is loved</h2>
 
-  <div>
-    <button type="button" data-modal-close>
-      <svg>
-        <use href="./img/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <h2>Leave a review about <span>our chocolate</span></h2>
-    <form name="modal-form" autocomplete="off" novalidate>
-      <label>
-        <span>Name</span>
-        <input type="text" name="user-name" placeholder="Name" />
-      </label>
-      <label>
-        <span>Email</span>
-        <input type="email" name="user-email" placeholder="Email" />
-      </label>
-      <label>
-        <span>Phone</span>
-        <input type="tel" name="user-phone" placeholder="Phone number" />
-      </label>
-      <label>
-        <span>Comment</span>
-        <textarea name="user-message" placeholder="Enter text"></textarea>
-      </label>
-      <button type="submit">Send</button>
-    </form>
+    <div class='reviews-swiper swiper'>
+      <ul class='reviews-list swiper-wrapper'>
+        <li class='reviews-item swiper-slide'>
+          <div class='reviews-description'>
+            <img
+              class='reviews-image'
+              srcset='
+                ./img/victoria_dobrzhanska.png    1x,
+                ./img/victoria_dobrzhanska@2x.png 2x
+              '
+              src='./img/victoria_dobrzhanska.png'
+              alt='Victoria Dobrzhanska'
+              width='80'
+            />
+            <h3 class='reviews-name'>Victoria Dobrzhanska</h3>
+            <p class='reviews-text'>
+              I love this chocolate bar. Perfect combination of light crispy
+              wafer, covered in a thin layer chocolate.
+            </p>
+          </div>
+        </li>
+        <li class='reviews-item swiper-slide'>
+          <div class='reviews-description'>
+            <img
+              class='reviews-image'
+              srcset='./img/nazar_babenko.png 1x, ./img/nazar_babenko@2x.png 2x'
+              src='./img/nazar_babenko.png'
+              alt='Nazar Babenko'
+              width='80'
+            />
+            <h3 class='reviews-name'>Nazar Babenko</h3>
+            <p class='reviews-text'>
+              This chocolate confection is a delight! A delight! The wafer is
+              light and crisp, the hazelnut cream is smooth, and the chocolate
+              is good.
+            </p>
+          </div>
+        </li>
+        <li class='reviews-item swiper-slide'>
+          <div class='reviews-description'>
+            <img
+              class='reviews-image'
+              srcset='
+                ./img/olena_kampusch.png    1x,
+                ./img/olena_kampusch@2x.png 2x
+              '
+              src='./img/olena_kampusch.png'
+              alt='Olena Kampusch'
+              width='80'
+            />
+            <h3 class='reviews-name'>Olena Kampusch</h3>
+            <p class='reviews-text'>
+              Chocolate is a family favourite treat. Love the delicious smooth
+              chocolate and the creaminess inside. The wafer is soft but
+              crunchy.
+            </p>
+          </div>
+        </li>
+        <li class='reviews-item swiper-slide'>
+          <div class='reviews-description'>
+            <img
+              class='reviews-image'
+              srcset='./img/natalia_sus.png 1x, ./img/natalia_sus@2x.png 2x'
+              src='./img/natalia_sush.png'
+              alt='Natalia Sus'
+              width='80'
+            />
+            <h3 class='reviews-name'>Natalia Sus</h3>
+            <p class='reviews-text'>
+              The chocolate assortment was delicious. Both dark and milk
+              chocolate pieces were smooth and just right on the sweetness
+              level.
+            </p>
+          </div>
+        </li>
+        <li class='reviews-item swiper-slide'>
+          <div class='reviews-description'>
+            <img
+              class='reviews-image'
+              srcset='
+                ./img/danilo_nottingham.png    1x,
+                ./img/danilo_nottingham@2x.png 2x
+              '
+              src='./img/danilo_nottingham.png'
+              alt='Danilo Nottingham'
+              width='80'
+            />
+            <h3 class='reviews-name'>Danilo Nottingham</h3>
+            <p class='reviews-text'>
+              This is delicious. It so rich and flavorful you don’t need to use
+              as many. I love topping an apple with almond butter and these
+              chips for a snack.
+            </p>
+          </div>
+        </li>
+        <li class='reviews-item swiper-slide'>
+          <div class='reviews-description'>
+            <img
+              class='reviews-image'
+              srcset='./img/irina_tydnyuk.png 1x, ./img/irina_tydnyuk@2x.png 2x'
+              src='./img/irina_tydnyuk.png'
+              alt='Irina Tydnyuk'
+              width='80'
+            />
+            <h3 class='reviews-name'>Irina Tydnyuk</h3>
+            <p class='reviews-text'>
+              This is simply the best chocolate around, and I'm just thrilled to
+              support a local company! Best local chocolate - world class :)
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class='reviews-swiper-pagination swiper-pagination'></div>
+    </div>
+
+    <button class='reviews-button' type='button'>Leave a review</button>
+
+    <div class='reviews-modal-wrapper modal-wrapper modal-wrapper-hidden'>
+      <div class='modal-container'>
+        <div class='modal'>
+          <button class='modal-close-button' type='button' data-reviews-modal-close-button>
+            <svg class='modal-close-icon'>
+              <use href='./img/icons.svg#icon-close'></use>
+            </svg>
+          </button>
+          <h2 class='reviews-modal-title'>
+            Leave a review
+            about <span class='title-slogan'>our&nbsp;chocolate</span>
+          </h2>
+          <form name='reviews-modal-form' autocomplete='off' novalidate>
+            <label class='reviews-modal-label'>
+              <span class='visually-hidden'>Name</span>
+              <input class='reviews-modal-field' type='text' name='user-name' placeholder='Name' />
+            </label>
+            <label class='reviews-modal-label'>
+              <span class='visually-hidden'>Email</span>
+              <input class='reviews-modal-field' type='email' name='user-email' placeholder='Enter your email' />
+            </label>
+            <label class='reviews-modal-label'>
+              <span class='visually-hidden'>Phone</span>
+              <span class='reviews-modal-field-flag'>
+                <span class='reviews-modal-field-flag-icon'></span>
+                <span class='reviews-modal-field-flag-tel'>+380</span>
+              </span>
+              <input class='reviews-modal-field reviews-modal-field-phone' type='tel' name='user-phone'
+                     placeholder='Phone number' />
+            </label>
+            <label class='reviews-modal-label reviews-modal-label--textarea'>
+              <span class='visually-hidden'>Comment</span>
+              <textarea class='reviews-modal-field reviews-modal-field--textarea' name='user-message'
+                        placeholder='Enter text'></textarea>
+            </label>
+            <button class='reviews-submit-button reviews-button reviews-button-secondary' type='submit'>
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class='modal-wrapper modal-wrapper-hidden' data-reviews-modal-popup-wrapper>
+      <div class='modal-container'>
+        <div class='modal modal-popup'>
+          <button class='modal-close-button modal-close-button-secondary' type='button' data-reviews-modal-popup-close-button>
+            <svg class='modal-close-icon modal-close-icon-secondary'>
+              <use href='./img/icons.svg#icon-close'></use>
+            </svg>
+          </button>
+          <div class='modal-popup-text-container'>
+            <h2 class='modal-popup-title'>Thank you
+              for your feedback!
+            </h2>
+            <p class='modal-popup-text'>
+              We are so happy to hear from you!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
