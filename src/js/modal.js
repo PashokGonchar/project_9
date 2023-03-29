@@ -26,7 +26,7 @@
     openModalBtn: document.querySelector('.reviews-button'),
     closeModalBtn: document.querySelector('[data-reviews-modal-close-button]'),
     modal: document.querySelector('.reviews-modal-wrapper'),
-    submitModalBtn: document.querySelector('.reviews-submit-button'),
+    submitModalForm: document.querySelector('[data-reviews-modal-form]'),
 
     modalPopup: document.querySelector('[data-reviews-modal-popup-wrapper]'),
     closeModalPopupBtn: document.querySelector(
@@ -45,7 +45,7 @@
     isOpen = !isOpen;
   }
 
-  refsReviews.submitModalBtn.addEventListener('click', evt => {
+  refsReviews.submitModalForm.addEventListener('submit', evt => {
     evt.preventDefault();
     refsReviews.modal.classList.add('modal-wrapper-hidden');
     refsReviews.modalPopup.classList.remove('modal-wrapper-hidden');
@@ -64,7 +64,7 @@
     openModalBtn: document.querySelector('[data-hero-modal-open]'),
     closeModalBtn: document.querySelector('[data-hero-modal-close]'),
     modal: document.querySelector('[data-hero-modal]'),
-    submitModalBtn: document.querySelector('[data-submit-hero]'),
+    submitModalForm: document.querySelector('[data-form-hero]'),
 
     modalPopup: document.querySelector('[data-hero-modal-popup-wrapper]'),
     closeModalPopupBtn: document.querySelector(
@@ -83,7 +83,7 @@
     isOpen = !isOpen;
   }
 
-  refs.submitModalBtn.addEventListener('click', evt => {
+  refs.submitModalForm.addEventListener('submit', evt => {
     evt.preventDefault();
     refs.modal.classList.add('is-hidden');
     refs.modalPopup.classList.remove('modal-wrapper-hidden');
