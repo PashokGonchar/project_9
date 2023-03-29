@@ -5,13 +5,25 @@
     </h2>
     <div class="how-its-made">
       <iframe
-      class="video-made"
+        class="video-made"
         src="https://www.youtube.com/embed/9MBrCCCrvDA?start=1"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
         loading="lazy"
       ></iframe>
+      <div class="image-made">
+        <picture>
+          <source
+            srcset="/img/made_mobile@2x.jpg 2x"
+            media="(max-width:600px)"
+          />
+          <img src="img/made_mobile@2x.jpg" alt="how_its_made" loading="lazy" />
+        </picture>
+        <svg class="play-made">
+          <use href="/img/icons.svg#icon-play"></use>
+        </svg>
+      </div>
       <div class="text-made">
         <h3 class="subtitle">
           Try our chocolates today and <br> discover the perfect balance of flavor
