@@ -19,7 +19,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/project_9/assets/index-9218e781.js"></script>
+    <script type="module" crossorigin src="/project_9/assets/index-dee417e7.js"></script>
     <link rel="stylesheet" href="/project_9/assets/index-9db9c0c2.css">
   </head>
   <body>
@@ -172,7 +172,7 @@
       </svg>
     </button>
 
-    <form name="hero-buy-now">
+    <form name="hero-buy-now" data-form-hero>
       <h2><span class="color-title-hero">bUY</span> nOW</h2>
       <div class="slide-hero-modal hero-swiper swiper">
         <ul class="swiper-wrapper">
@@ -293,7 +293,7 @@
         ></textarea>
       </div>
 
-      <button class="hero-button сolored" data-submit-hero type="submit">
+      <button class="hero-button сolored" type="submit">
         Submit
       </button>
     </form>
@@ -877,6 +877,7 @@
               src='/project_9/assets/victoria_dobrzhanska-090a5dea.png'
               alt='Victoria Dobrzhanska'
               width='80'
+              loading='lazy'
             />
             <h3 class='reviews-name'>Victoria Dobrzhanska</h3>
             <p class='reviews-text'>
@@ -893,6 +894,7 @@
               src='/project_9/assets/nazar_babenko-67fa1f0e.png'
               alt='Nazar Babenko'
               width='80'
+              loading='lazy'
             />
             <h3 class='reviews-name'>Nazar Babenko</h3>
             <p class='reviews-text'>
@@ -910,6 +912,7 @@
               src='/project_9/assets/olena_kampusch-928291ba.png'
               alt='Olena Kampusch'
               width='80'
+              loading='lazy'
             />
             <h3 class='reviews-name'>Olena Kampusch</h3>
             <p class='reviews-text'>
@@ -927,6 +930,7 @@
               src='./img/natalia_sush.png'
               alt='Natalia Sus'
               width='80'
+              loading='lazy'
             />
             <h3 class='reviews-name'>Natalia Sus</h3>
             <p class='reviews-text'>
@@ -944,6 +948,7 @@
               src='/project_9/assets/danilo_nottingham-e5c745da.png'
               alt='Danilo Nottingham'
               width='80'
+              loading='lazy'
             />
             <h3 class='reviews-name'>Danilo Nottingham</h3>
             <p class='reviews-text'>
@@ -961,6 +966,7 @@
               src='/project_9/assets/irina_tydnyuk-5ab24cb8.png'
               alt='Irina Tydnyuk'
               width='80'
+              loading='lazy'
             />
             <h3 class='reviews-name'>Irina Tydnyuk</h3>
             <p class='reviews-text'>
@@ -987,14 +993,26 @@
             Leave a review
             about <span class='title-slogan'>our&nbsp;chocolate</span>
           </h2>
-          <form name='reviews-modal-form' autocomplete='off' novalidate>
+          <form name='reviews-modal-form' autocomplete='off' data-reviews-modal-form>
             <label class='reviews-modal-label'>
               <span class='visually-hidden'>Name</span>
-              <input class='reviews-modal-field' type='text' name='user-name' placeholder='Name' />
+              <input
+                class='reviews-modal-field'
+                type='text'
+                name='user-name'
+                placeholder='Name'
+                required
+              />
             </label>
             <label class='reviews-modal-label'>
               <span class='visually-hidden'>Email</span>
-              <input class='reviews-modal-field' type='email' name='user-email' placeholder='Enter your email' />
+              <input
+                class='reviews-modal-field'
+                type='email'
+                name='user-email'
+                placeholder='Enter your email'
+                required
+              />
             </label>
             <label class='reviews-modal-label'>
               <span class='visually-hidden'>Phone</span>
@@ -1002,15 +1020,25 @@
                 <span class='reviews-modal-field-flag-icon'></span>
                 <span class='reviews-modal-field-flag-tel'>+380</span>
               </span>
-              <input class='reviews-modal-field reviews-modal-field-phone' type='tel' name='user-phone'
-                     placeholder='Phone number' />
+              <input
+                class='reviews-modal-field reviews-modal-field-phone'
+                type='tel'
+                name='user-phone'
+                placeholder='Phone number'
+                required
+                pattern='[0-9]{9}'
+                title='Введено невірну кількість цифр'
+              />
             </label>
             <label class='reviews-modal-label reviews-modal-label--textarea'>
               <span class='visually-hidden'>Comment</span>
-              <textarea class='reviews-modal-field reviews-modal-field--textarea' name='user-message'
-                        placeholder='Enter text'></textarea>
+              <textarea
+                class='reviews-modal-field reviews-modal-field--textarea'
+                name='user-message'
+                placeholder='Enter text'
+                required></textarea>
             </label>
-            <button class='reviews-submit-button reviews-button reviews-button-secondary' type='submit'>
+            <button class='reviews-button reviews-button-secondary' type='submit'>
               Send
             </button>
           </form>
@@ -1021,7 +1049,11 @@
     <div class='modal-wrapper modal-wrapper-hidden' data-reviews-modal-popup-wrapper>
       <div class='modal-container'>
         <div class='modal modal-popup'>
-          <button class='modal-close-button modal-close-button-secondary' type='button' data-reviews-modal-popup-close-button>
+          <button
+            class='modal-close-button modal-close-button-secondary'
+            type='button'
+            data-reviews-modal-popup-close-button
+          >
             <svg class='modal-close-icon modal-close-icon-secondary'>
               <use href='/project_9/assets/icons-7c89c8b5.svg#icon-close'></use>
             </svg>
