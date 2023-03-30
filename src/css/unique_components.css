@@ -210,6 +210,23 @@ justify-content: center;
   line-height: 12px;
   letter-spacing: 0em;
   text-align: left;
+  color: var(--color-white);
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  border-radius: 35px;
+  background-color: var(--color-orange);
+  padding: 6px 16px 6px 16px;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.the-benefits-unique-components {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
   color: var(--color-black);
   height: 24px;
   left: 0px;
@@ -221,23 +238,15 @@ justify-content: center;
   gap: 6px;
   display: flex;
   align-items: center;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .second-backstory-unique-components {
   height: 146px;
   padding: 0 28px;
   text-align: left;
-  overflow: auto;;
+  overflow: auto;
 }
 
-.product-unique-components:hover {
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 0em;
-  color: var(--color-white);
-  background-color: var(--color-orange);}
 
 .milk-image-unique-components {
   width: 335px;
